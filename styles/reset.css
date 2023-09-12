@@ -1,9 +1,38 @@
 * {box-sizing:border-box;}
 /* local or web(@import) 글꼴 작성위치 */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 @font-face {
     font-family:'마포꽃섬'; /* 글꼴명 지정 */
-    src:url(../font/mapoflower.ttf); /* 글꼴경로 지정 */
+    src:url(../fonts/mapoflower.ttf); /* 글꼴경로 지정 */
+}
+@font-face {
+    font-family:'여기어때'; /* 글꼴명 지정 */
+    src:url(../fonts/Jalnan.ttf); /* 글꼴경로 지정 */
+}
+@font-face {
+    font-family:'나눔스퀘어'; /* 글꼴명 지정 */
+    src:url(../fonts/nanumsquare.ttf); /* 글꼴경로 지정 */
+}
+@font-face {
+    font-family:'rage'; /* 글꼴명 지정 */
+    src:url(../fonts/rage.TTF); /* 글꼴경로 지정 */
+}
+@font-face {
+    font-family:'소미체'; /* 글꼴명 지정 */
+    src:url(../fonts/somice.ttf); /* 글꼴경로 지정 */
+}
+@font-face {
+    font-family:'cooper'; /* 글꼴명 지정 */
+    src:url(../fonts/cooper.TTF); /* 글꼴경로 지정 */
+}
+@font-face {
+    font-family:'cooperout'; /* 글꼴명 지정 */
+    src:url(../fonts/cooperout.ttf); /* 글꼴경로 지정 */
+}
+@font-face {
+    font-family:'tmon'; /* 글꼴명 지정 */
+    src:url(../fonts/tmon.ttf); /* 글꼴경로 지정 */
 }
 /* reset.css */
 html,body, /*구조태그*/
@@ -30,7 +59,7 @@ css 디자인 결과에서 숨겨지는 대상태그에
 적용하는 공통 클래스 skip */
 .skip {display:none;}
 /* swiper-slide 라이브러리에서 기본제공하는 이전, 다음 숨기기 */
-.swiper .swiper-button-prev::after,
-.swiper .swiper-button-next::after {
+.cardnews .title .slide_btn .swiper-button-prev::after,
+.cardnews .title .slide_btn .swiper-button-next::after {
     display: none;
 }
