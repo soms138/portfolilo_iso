@@ -1,0 +1,295 @@
+main {}
+main .section {
+    background: linear-gradient(0deg, rgba(147,187,215,1) 0%, rgba(242,215,206,1) 50%, rgba(147,187,215,1) 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+main .intro {position: relative;}
+main .intro .intro_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+main .intro .intro_text .txt_left {}
+main .intro .intro_text > div > em,
+main .intro .intro_text > div > span {
+    color: #294F81;
+    font-weight: 500;
+}
+main .intro .intro_text .txt_right em,
+main .intro .intro_text .txt_left span {font-weight: 700;}
+main .intro .intro_text p {
+    margin: 10px 10px 0;
+    width: 423px; height: 128px;
+}
+main .intro .intro_text p img {width: 100%;}
+main .intro .intro_text .txt_right {}
+main .intro .intro_bg {}
+main .intro .intro_bg > span {
+    background-repeat: repeat-x;
+}
+main .intro .intro_bg .sea {
+    background-image: url(../images/bg_sea.jpg);
+    background-position: center;
+    width: 100%; height: 500px;
+}
+main .intro .intro_bg .cloud1 {
+    background-image: url(../images/bg_cloud1.png);
+    background-position: center;
+    width: 70%; height: 500px;
+}
+main .intro .intro_bg .cloud2 {
+    background-image: url(../images/bg_cloud2.png);
+    background-position: center;
+    width: 70%; height: 500px;
+}
+main .about {
+    position: relative;
+    background: url(../images/bg_sea.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+main .about::after {
+    content: '';
+    background-color: rgba(0,0,0,0.5);
+    display: block;
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%; z-index: 100;
+}
+main .about .info {
+    position: relative;
+    z-index: 200;
+}
+main .about .info h1 {
+    font-family:'마포꽃섬';
+    font-size: 3.157rem;
+    color: #fff;
+    letter-spacing: -0.05rem;
+    margin-bottom: 50px;
+}
+main .about .info .about_contents {
+    display: flex;
+    justify-content: space-between;
+    width: 1160px;
+}
+/* font 통합태그모음 */
+main .about .info .about_contents > div > div > em {
+    font-size: 1.333rem;
+    font-weight: 700;
+    color: #C3E2FF;
+    width: 122px;
+    margin-right: 25px;
+}
+main .about .info .about_contents div > div span,
+main .about .info .about_contents .c_right > div .desc p em {color: #fff;}
+/* margin 통합태그 */
+main .about .info .about_contents .c_left > div:last-child,
+main .about .info .about_contents .c_right > div .desc p:last-child {margin-bottom: 0;}
+main .about .info .about_contents .c_left > div .tag span,
+main .about .info .about_contents .c_right > div .desc p em {margin-right: 15px;}
+main .about .info .about_contents .c_left > div .tag span:last-child {margin-right: 0;}
+/* 기본태그 */
+main .about .info .about_contents .c_left {}
+main .about .info .about_contents .c_left > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+main .about .info .about_contents .c_left > div:last-child {}
+main .about .info .about_contents .c_left > div > em {}
+main .about .info .about_contents .c_left > div span {}
+main .about .info .about_contents .c_left > div .tag {}
+main .about .info .about_contents .c_left > div .tag span {}
+main .about .info .about_contents .c_left > div .tag span:last-child {}
+main .about .info .about_contents .c_right {}
+main .about .info .about_contents .c_right > div:first-child {margin-bottom: 35px;}
+main .about .info .about_contents .c_right > div {display: flex;}
+main .about .info .about_contents .c_right > div > em {margin: -3px 25px 0 0;}
+main .about .info .about_contents .c_right > div .desc {}
+main .about .info .about_contents .c_right > div .desc p {margin-bottom: 16px;}
+main .about .info .about_contents .c_right > div .desc p em {font-weight: 700;}
+main .about .info .about_contents .c_right > div .desc p span {}
+main .about .skills_wrap {
+    margin-top: 100px;
+    padding: 15px 0;
+    position: relative;
+    z-index: 200;
+    background-color: rgba(255,255,255,0.5);
+    background-size: cover;
+    width: 100%;
+}
+main .about .skills {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1160px;
+    margin: 0 auto;
+}
+main .about .skills img {
+    width: 50px; height: 50px;
+}
+main .web1,main .web2,main .web3 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+main .web1::after, main .web2::after, main .web3::after {
+    content: '';
+    background-color: rgba(0,0,0,0.5);
+    display: block;
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%; z-index: 100;
+}
+main .web1 {background-image: url(../images/bg_cjenm.jpg);}
+main .web2 {background-image: url(../images/bg_cineshop.jpg);}
+main .web3 {}
+main .web4 {background-image: url(../images/bg_landing.jpg);}
+main > div h2 {
+    position: absolute;
+    z-index: 200;
+    font-family: 'Shrikhand', cursive;
+    font-size: 6.25rem;
+    color: #fff;
+    margin-bottom: 50px;
+}
+main > div .project {
+    position: absolute;
+    z-index: 200;
+    height: 500px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main > div .project p {}
+main > div .project p img {width: 624px; height: 435px;}
+main > div .project .project_contents {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 526px;
+    margin-left: 50px;
+}
+main > div .project .project_contents > div {
+    display: flex;
+    margin-bottom: 15px;
+}
+/* font 통합태그모음 */
+main > div .project .project_contents > div:last-child {margin-bottom: 0;}
+main > div .project .project_contents > div > em,
+main > div .project .project_contents > div > p {
+    font-size: 1.333rem;
+    font-weight: 700;
+    margin-right: 20px;
+}
+main > div .project .project_contents > div > span,
+main > div .project .project_contents > div p,
+main > div .project .project_contents > div .html_title .name em {
+    font-size: 1.333rem;
+}
+main > div .project .project_contents > div > em,
+main > div .project .project_contents > div > p {width: 100px;}
+/* 기본 태그 */
+main > div .project .project_contents > div:first-child > span {line-height: 26px;}
+main > div .project .project_contents > div p {}
+main > div .project .project_contents > div .html_title {}
+main > div .project .project_contents > div .html_title img {width: 16px; height: 16px;}
+main > div .project .project_contents > div .html_title .name {}
+main > div .project .project_contents > div .html_title .name em {line-height: 25px;}
+main > div .project .project_contents > div .html_title .name span {
+    font-size: 0.75rem;
+    margin: 0 10px;
+    line-height: 25px;
+}
+main > div .project .project_contents .process {}
+main > div .project .project_contents .process .progress_img {display: flex;}
+main > div .project .project_contents .process .progress_img img {
+    width: 30px; height: 30px;
+    margin-right: 20px;
+}
+main > div .project .project_contents .process .progress_img img:last-child {margin-right: 0;}
+main > div .project .project_btn {}
+main > div .project .project_btn a {}
+main > div .project .project_btn a:last-child {}
+/* graphic section 통합태그모음 */
+main > div h2 {}
+h3 {}
+.font {}
+.font span {}
+.color {}
+.color span {}
+/* 기본태그 */
+main .graphic1 {}
+main .graphic1 h2 {}
+main .graphic1 .sns_img {}
+main .graphic1 .sns_img .sns {}
+main .graphic1 .sns_img .sns h3 {}
+main .graphic1 .sns_img .sns .font {}
+main .graphic1 .sns_img .sns .font span {}
+main .graphic1 .sns_img .sns .color {}
+main .graphic1 .sns_img .sns .color span {}
+main .graphic2 #bnr_slide {}
+main .graphic2 #bnr_slide .swiper-wrapper {}
+main .graphic2 #bnr_slide .swiper-wrapper .swiper-slide {}
+main .graphic2 #bnr_slide .swiper-wrapper .slide1 {}
+main .graphic2 #bnr_slide .swiper-wrapper .slide2 {}
+main .graphic2 #bnr_slide .swiper-wrapper .slide3 {}
+main .graphic2 #bnr_slide .swiper-wrapper .slide4 {}
+main .graphic2 #bnr_slide .swiper-wrapper .swiper-slide > div {}
+main .graphic2 #bnr_slide .swiper-wrapper .swiper-slide > div {}
+main .graphic2 #bnr_slide .swiper-wrapper .swiper-slide > div h3 {}
+main .graphic2 #bnr_slide .swiper-wrapper .swiper-slide > div .font {}
+main .graphic2 #bnr_slide .swiper-wrapper .swiper-slide > div .font span {}
+main .graphic2 #bnr_slide .swiper-wrapper .swiper-slide > div .color {}
+main .graphic2 #bnr_slide .swiper-wrapper .swiper-slide > div .color p {}
+main .graphic2 #bnr_slide .swiper-wrapper .swiper-slide > div .color p span:first-child {}
+main .graphic2 #bnr_slide .swiper-wrapper .swiper-slide > div .color p span:last-child {}
+main .graphic3 #news_slide {}
+main .graphic3 #news_slide .swiper-wrapper {}
+main .graphic3 #news_slide .swiper-wrapper .swiper-slide {}
+main .graphic3 #news_slide .swiper-wrapper .swiper-slide .cover {}
+main .graphic3 #news_slide .swiper-wrapper .swiper-slide p:nth-child(2) {}
+main .graphic3 #news_slide .swiper-wrapper .swiper-slide p:nth-child(3) {}
+main .graphic3 #news_slide .swiper-wrapper .swiper-slide p:nth-child(4) {}
+main .graphic3 #news_slide .swiper-wrapper .swiper-slide .cover h3 {}
+main .graphic3 #news_slide .swiper-wrapper .swiper-slide .cover .font {}
+main .graphic3 #news_slide .swiper-wrapper .swiper-slide .cover .font span {}
+main .graphic3 #news_slide .swiper-wrapper .swiper-slide .cover .color {}
+main .graphic3 #news_slide .swiper-wrapper .swiper-slide .cover .color span:first-child {}
+main .graphic3 #news_slide .swiper-wrapper .swiper-slide .cover .color span:last-child {}
+main .graphic4 {}
+main .graphic4 .detail {}
+main .graphic4 .detail h2 {}
+main .graphic4 .detail .tab_contents {}
+main .graphic4 .detail .tab_contents > div {}
+main .graphic4 .detail .tab_contents > div .tab_cover {}
+main .graphic4 .detail .tab_contents > div .tab_cover img {}
+main .graphic4 .detail .tab_contents > div .c_txt {}
+main .graphic4 .detail .tab_contents > div .c_txt h3 {}
+main .graphic4 .detail .tab_contents > div .c_txt .font {}
+main .graphic4 .detail .tab_contents > div .c_txt .font span {}
+main .graphic4 .detail .tab_contents > div .c_txt .color {}
+main .graphic4 .detail .tab_contents > div .c_txt .color p {}
+main .graphic4 .detail .tab_contents > div .c_txt .color p span:first-child {}
+main .graphic4 .detail .tab_contents > div .c_txt .color p span:last-child {}
+main .graphic4 .detail .tab_contents > div .tab_detail {}
+main .graphic4 .detail .tab_contents > div .tab_detail img {}
+main .contact {}
+main .contact .outro_text {}
+main .contact .outro_text img {}
+main .contact .contents {}
+main .contact .contents p {}
+main .contact .contents p em {}
+main .contact .contents p span {}

@@ -11,7 +11,11 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- styles -->
     <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -49,16 +53,16 @@
                     </div>
                 </div>
                 <div class="fnb_right">
-                    <a href="#" class="INTRO">INTRO</a>
-                    <a href="#" class="ABOUT">ABOUT</a>
-                    <a href="#" class="WEB">WEB</a>
-                    <a href="#" class="GRAPHIC">GRAPHIC</a>
+                    <a href="#" class="intro active">INTRO</a>
+                    <a href="#" class="about">ABOUT</a>
+                    <a href="#" class="web">WEB</a>
+                    <a href="#" class="graphic">GRAPHIC</a>
                 </div>
             </footer>
             <div class="intro_bg">
+                <span class="sea"></span>
                 <span class="cloud1"></span>
                 <span class="cloud2"></span>
-                <span class="sea"></span>
             </div>
         </div>
         <div class="section about">
@@ -129,25 +133,26 @@
                     </div>
                 </div>
             </div>
-            <div class="skills">
-                <img src="./images/icon/ico_ps.png" alt="photoshop">
-                <img src="./images/icon/ico_ai.png" alt="illustrator">
-                <img src="./images/icon/ico_html.png" alt="html">
-                <img src="./images/icon/ico_css.png" alt="css">
-                <img src="./images/icon/ico_js.png" alt="js">
-                <img src="./images/icon/ico_php.png" alt="php">
-                <img src="./images/icon/ico_git.png" alt="git">
-                <img src="./images/icon/ico_figma.png" alt="figma">
-                <img src="./images/icon/ico_hancom.png" alt="한컴">
-                <img src="./images/icon/ico_exel.png" alt="exel">
-                <img src="./images/icon/ico_ppt.png" alt="powerpoint">
+            <div class="skills_wrap">
+                <div class="skills">
+                    <img src="./images/icon/ico_ps.png" alt="photoshop">
+                    <img src="./images/icon/ico_ai.png" alt="illustrator">
+                    <img src="./images/icon/ico_html.png" alt="html">
+                    <img src="./images/icon/ico_css.png" alt="css">
+                    <img src="./images/icon/ico_js.png" alt="js">
+                    <img src="./images/icon/ico_php.png" alt="php">
+                    <img src="./images/icon/ico_git.png" alt="git">
+                    <img src="./images/icon/ico_figma.png" alt="figma">
+                    <img src="./images/icon/ico_hancom.png" alt="한컴">
+                    <img src="./images/icon/ico_exel.png" alt="exel">
+                    <img src="./images/icon/ico_ppt.png" alt="powerpoint">
+                </div>
             </div>
-            <?php include('./footer.php') ?>
         </div>
-        <div class="section web1">
+        <div class="section web web1">
             <h2>CJ ENM</h2>
             <div class="project">
-                <p><img src="#" alt=""></p>
+                <p><img src="./images/web_cjenm.png" alt=""></p>
                 <div class="project_contents">
                     <div class="type">
                         <em>TYPE</em>
@@ -158,8 +163,9 @@
                         <span>9days</span>
                     </div>
                     <div class="page">
-                        <p>Main + Sub * 4</p>
+                        <p>PAGE</p>
                         <div class="html_title">
+                            <p>Main + Sub * 4</p>
                             <img src="./images/icon/ico_arrow.png" alt="">
                             <div class="name">
                                 <em>index</em>
@@ -175,7 +181,6 @@
                         </div>
                     </div>
                     <div class="process">
-                        <p></p>
                         <div class="progress_img">
                             <img src="./images/icon/ico_ps.png" alt="photoshop">
                             <img src="./images/icon/ico_ai.png" alt="illustrator">
@@ -187,18 +192,18 @@
                             <img src="./images/icon/ico_figma.png" alt="figma">
                         </div>
                     </div>
-                </div>
-                <div class="project_btn">
-                    <a href="#">Proposal</a>
-                    <a href="#">Prototype</a>
-                    <a href="#">Project Website</a>
+                    <div class="project_btn">
+                        <a href="#">Proposal</a>
+                        <a href="#">Prototype</a>
+                        <a href="#">Project Website</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="section web2">
+        <div class="section web web2">
             <h2>Cineshop</h2>
             <div class="project">
-                <p><img src="#" alt=""></p>
+                <p><img src="./images/web_cineshop.png" alt=""></p>
                 <div class="project_contents">
                     <div class="type">
                         <em>TYPE</em>
@@ -209,8 +214,9 @@
                         <span>7days</span>
                     </div>
                     <div class="page">
-                        <p>Main + Sub(4)</p>
+                        <p>PAGE</p>
                         <div class="html_title">
+                            <p>Main + Sub * 4</p>
                             <img src="./images/icon/ico_arrow.png" alt="">
                             <div class="name">
                                 <em>index</em>
@@ -226,7 +232,6 @@
                         </div>
                     </div>
                     <div class="process">
-                        <p></p>
                         <div class="progress_img">
                             <img src="./images/icon/ico_ps.png" alt="photoshop">
                             <img src="./images/icon/ico_ai.png" alt="illustrator">
@@ -238,15 +243,15 @@
                             <img src="./images/icon/ico_figma.png" alt="figma">
                         </div>
                     </div>
-                </div>
-                <div class="project_btn">
-                    <a href="#">Proposal</a>
-                    <a href="#">Prototype</a>
-                    <a href="#">Project Website</a>
+                    <div class="project_btn">
+                        <a href="#">Proposal</a>
+                        <a href="#">Prototype</a>
+                        <a href="#">Project Website</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="section web3">
+        <div class="section web web3">
             <h2></h2>
             <div class="project">
                 <p><img src="#" alt=""></p>
@@ -260,8 +265,9 @@
                         <span>days</span>
                     </div>
                     <div class="page">
-                        <p>Main + Sub()</p>
+                        <p>PAGE</p>
                         <div class="html_title">
+                            <p>Main + Sub * 4</p>
                             <img src="./images/icon/ico_arrow.png" alt="">
                             <div class="name">
                                 <em>index</em>
@@ -277,7 +283,6 @@
                         </div>
                     </div>
                     <div class="process">
-                        <p></p>
                         <div class="progress_img">
                             <img src="./images/icon/ico_ps.png" alt="photoshop">
                             <img src="./images/icon/ico_ai.png" alt="illustrator">
@@ -289,18 +294,18 @@
                             <img src="./images/icon/ico_figma.png" alt="figma">
                         </div>
                     </div>
-                </div>
-                <div class="project_btn">
-                    <a href="#">Proposal</a>
-                    <a href="#">Prototype</a>
-                    <a href="#">Project Website</a>
+                    <div class="project_btn">
+                        <a href="#">Proposal</a>
+                        <a href="#">Prototype</a>
+                        <a href="#">Project Website</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="section graphic1">
+        <div class="section web web4">
             <h2>Landing</h2>
             <div class="project">
-                <p><img src="#" alt=""></p>
+                <p><img src="./images/web_landing.png" alt=""></p>
                 <div class="project_contents">
                     <div class="type">
                         <em>TYPE</em>
@@ -311,8 +316,9 @@
                         <span>30h</span>
                     </div>
                     <div class="page">
-                        <p>Main</p>
+                        <p>PAGE</p>
                         <div class="html_title">
+                            <p>Main</p>
                             <img src="./images/icon/ico_arrow.png" alt="">
                             <div class="name">
                                 <em>index</em>
@@ -320,7 +326,6 @@
                         </div>
                     </div>
                     <div class="process">
-                        <p></p>
                         <div class="progress_img">
                             <img src="./images/icon/ico_ps.png" alt="photoshop">
                             <img src="./images/icon/ico_ai.png" alt="illustrator">
@@ -330,11 +335,11 @@
                             <img src="./images/icon/ico_figma.png" alt="figma">
                         </div>
                     </div>
-                </div>
-                <div class="project_btn">
-                    <a href="#">Proposal</a>
-                    <a href="#">Prototype</a>
-                    <a href="#">Project Website</a>
+                    <div class="project_btn">
+                        <a href="#">Proposal</a>
+                        <a href="#">Prototype</a>
+                        <a href="#">Project Website</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -343,18 +348,18 @@
             <div class="sns_img">
                 <div class="sns c1">
                     <h3>Style Guide</h3>
-                    <p>
+                    <p class="font">
                         <span>MONTSERRAT</span>
                         <span>여기어때</span>
                     </p>
-                    <p>
+                    <p class="color">
                         <span></span>
                         <span>&#35;E50012</span>
                     </p>
                 </div>
                 <div class="sns c2">
                     <h3>Style Guide</h3>
-                    <p>
+                    <p class="font">
                         <span>Georgia</span>
                         <span>나눔스퀘어</span>
                         <span>나눔소미체</span>
@@ -373,12 +378,8 @@
                 </div>
                 <div class="sns c3">
                     <h3>Style Guide</h3>
-                    <p>
-                        <span></span>
+                    <p class="font">
                         <span>Shitikhand</span>
-                    </p>
-                    <p>
-                        <span></span>
                         <span>Rage ltaic</span>
                     </p>
                     <div class="color">
@@ -394,10 +395,10 @@
                 </div>
                 <div class="sns c4">
                     <h3>Style Guide</h3>
-                    <p>
+                    <p class="font">
                         <span>Racing Sans One</span>
                     </p>
-                    <p>
+                    <p class="color">
                         <span></span>
                         <span>&#35;222222</span>
                     </p>
@@ -410,7 +411,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slide1">
                         <h3>Style Guide</h3>
-                        <p>
+                        <p class="font">
                             <span>Cooper BlkOul BT</span>
                             <span>Cooper Black</span>
                             <span>Inter</span>
@@ -428,7 +429,7 @@
                     </div>
                     <div class="swiper-slide slide2">
                         <h3>Style Guide</h3>
-                        <p>
+                        <p class="font">
                             <span>inter</span>
                         </p>
                         <div class="color">
@@ -444,7 +445,7 @@
                     </div>
                     <div class="swiper-slide slide3">
                         <h3>Style Guide</h3>
-                        <p>
+                        <p class="font">
                             <span>Galada</span>
                             <span>Noto Sans KR</span>
                         </p>
@@ -465,7 +466,7 @@
                     </div>
                     <div class="swiper-slide slide4">
                         <h3>Style Guide</h3>
-                        <p>
+                        <p class="font">
                             <span>inter</span>
                         </p>
                         <div class="color">
@@ -485,12 +486,12 @@
         <div class="section graphic3">
             <div class="cardnews">
                 <h2>CARDNEWS DESIGN</h2>
-                <div class="swiper" id="bnr_slide">
+                <div class="swiper" id="news_slide">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide slide1">
                             <div class="cover">
                                 <h3>Style Guide</h3>
-                                <p>
+                                <p class="font">
                                     <span>티몬소리체</span>
                                     <span>나눔스퀘어</span>
                                 </p>
@@ -524,7 +525,7 @@
                         <div class="swiper-slide slide2">
                             <div class="cover">
                                 <h3>Style Guide</h3>
-                                <p>
+                                <p class="font">
                                     <span>마포꽃섬체</span>
                                     <span>나눔스퀘어</span>
                                 </p>
