@@ -1,0 +1,12 @@
+@keyframes move_bg {
+    0% {background-position: 0 0;}
+    100% {background-position: 5000px 0;}
+}
+@keyframes gra_bg {
+    0% {background-position: 0 0;}
+    100% {background-position: 400% 0;}
+}
+@keyframes title {
+    0% {transform: translateY(40%); opacity: 0;}
+    100% {transform: translateY(0); opacity: 1;}
+}

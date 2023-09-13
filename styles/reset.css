@@ -44,7 +44,7 @@
 }
 @font-face {
     font-family:'nanum19'; /* 글꼴명 지정 */
-    src:url(../fonts/na); /* 글꼴경로 지정 */
+    src:url(../fonts/nanum19.ttf); /* 글꼴경로 지정 */
 }
 @font-face {
     font-family:'tmon'; /* 글꼴명 지정 */

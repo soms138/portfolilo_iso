@@ -6,9 +6,7 @@ $('#fullpage').fullpage({
     navigationTooltips: ['intro','info','Web1','Web2','Web3','Landing','SNS','Banner','Cardnews','Detail','Contact'],
 })
 const bnr_slide = new Swiper('#bnr_slide',{
-    slidesPerView: 2,
     direction: 'horizontal',
-    centeredSlides:true,
     autoplay:{delay:3000},
     speed:1000,
     loop:true,
@@ -35,7 +33,7 @@ const news = document.querySelectorAll('#news_slide .swiper-wrapper .swiper-slid
 console.log(tab_contents,tab_title,tab_detail,sns_contents,bnr,news)
 for(let i of tab_contents){i.style.display = 'none'}
 for(let i of tab_detail){i.style.display = 'none'}
-tab_contents[0].style.display = 'block'
+tab_contents[0].style.display = 'flex'
 tab_detail[0].style.display = 'block'
 tab_title.forEach(function(t,i){
     t.addEventListener('click', function(e){
@@ -43,7 +41,7 @@ tab_title.forEach(function(t,i){
         for(let i of tab_title){i.classList.remove('active')}
         t.classList.add('active')
         for(let i of tab_contents){i.style.display = 'none'}
-        tab_contents[i].style.display = 'block'
+        tab_contents[i].style.display = 'flex'
         tab_detail[i].style.display = 'block'
     })
 })
