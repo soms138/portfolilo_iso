@@ -10,3 +10,7 @@
     0% {transform: translateY(40%); opacity: 0;}
     100% {transform: translateY(0); opacity: 1;}
 }
+@keyframes nav {
+    0% {transform: rotate(0) scale(0.7); background-color: #fff;}
+    100% {transform: rotate(360deg) scale(1); background-color: #FFE55B;}
+}

@@ -50,6 +50,18 @@
     font-family:'tmon'; /* 글꼴명 지정 */
     src:url(../fonts/tmon.ttf); /* 글꼴경로 지정 */
 }
+@font-face {
+    font-family:'땅스부대찌개'; /* 글꼴명 지정 */
+    src:url(../fonts/buzzi.ttf); /* 글꼴경로 지정 */
+}
+@font-face {
+    font-family:'하나다움'; /* 글꼴명 지정 */
+    src:url(../fonts/hanadaum.ttf); /* 글꼴경로 지정 */
+}
+@font-face {
+    font-family:'주아'; /* 글꼴명 지정 */
+    src:url(../fonts/jua.ttf); /* 글꼴경로 지정 */
+}
 /* reset.css */
 html,body, /*구조태그*/
 h1,h2,h3,h4,h5,h6,p,blockquote,address, /*block*/
@@ -75,7 +87,7 @@ css 디자인 결과에서 숨겨지는 대상태그에
 적용하는 공통 클래스 skip */
 .skip {display:none;}
 /* swiper-slide 라이브러리에서 기본제공하는 이전, 다음 숨기기 */
-.cardnews_wrap .title .slide_btn .swiper-button-prev::after,
-.cardnews_wrap .title .slide_btn .swiper-button-next::after {
+.bnr_title .swiperBtn .swiper-button-prev::after,
+.bnr_title .swiperBtn .swiper-button-next::after {
     display: none;
 }
