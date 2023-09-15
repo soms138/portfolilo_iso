@@ -5,6 +5,12 @@ $('#fullpage').fullpage({
     navigationPosition: 'right',
     navigationTooltips: ['Intro','Info','Web1','Web2','Landing','SNS','Banner','Cardnews','Detail','Contact'],
 })
+const mouseImg = document.querySelector('#mouse')
+console.log(mouseImg)
+window.addEventListener('mousemove',function(e){
+        mouseImg.style.left = `${e.clientX}px` // X축
+        mouseImg.style.top = `${e.clientY}px` // Y축
+})
 const bnr_slide = new Swiper('#bnr_slide',{
     direction: 'horizontal',
     autoplay:{delay:3000},
@@ -31,9 +37,7 @@ const news_contents = document.querySelectorAll('.news_contents > div')
 const cover = document.querySelectorAll('.c_left > .cover')
 const txt = document.querySelector('.c_left > .txt')
 const c_right = document.querySelectorAll('.c_right > a')
-
-console.log(tab_contents,tab_title,tab_detail,sns_contents,bnr,btn_prev,btn_next,news_contents)
-
+console.log(tab_contents,tab_title,tab_detail,sns_contents,sns_popup,bnr,btn_prev,btn_next,news_contents,cover,txt,c_right)
 for(let i of tab_contents){i.style.display = 'none'}
 for(let i of tab_detail){i.style.display = 'none'}
 tab_contents[0].style.display = 'flex'

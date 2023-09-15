@@ -12,9 +12,9 @@
         </div>
     </div>
     <div class="fnb_right">
-        <a href="#" class="intro active">INTRO</a>
-        <a href="#" class="about">ABOUT</a>
-        <a href="#" class="web">WEB</a>
-        <a href="#" class="graphic">GRAPHIC</a>
+        <a href="#Intro" class="intro active">INTRO</a>
+        <a href="#Info" class="about">ABOUT</a>
+        <a href="#Web1" class="web">WEB</a>
+        <a href="#SNS" class="graphic">GRAPHIC</a>
     </div>
 </footer>
