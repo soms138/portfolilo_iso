@@ -28,6 +28,9 @@ const bnr = document.querySelectorAll('#bnr_slide .swiper-wrapper .swiper-slide'
 const btn_prev = document.querySelector('.cardnews_btn .prev')
 const btn_next = document.querySelector('.cardnews_btn .next')
 const news_contents = document.querySelectorAll('.news_contents > div')
+const cover = document.querySelectorAll('.c_left > .cover')
+const txt = document.querySelector('.c_left > .txt')
+const c_right = document.querySelectorAll('.c_right > a')
 
 console.log(tab_contents,tab_title,tab_detail,sns_contents,bnr,btn_prev,btn_next,news_contents)
 
@@ -46,6 +49,7 @@ tab_title.forEach(function(t,i){
         tab_detail[i].style.display = 'block'
     })
 })
+// news
 news_contents[1].style.opacity = '0'
 btn_prev.addEventListener('click',function(e){
     e.preventDefault()
@@ -59,6 +63,18 @@ btn_next.addEventListener('click',function(e){
     news_contents[0].style.opacity = '0'
     news_contents[1].style.opacity = '1'
 })
+for(let i of cover){i.style.display = 'none'}
+cover[0].style.display = 'block'
+c_right.forEach(function(c,d){
+    c.addEventListener('click',function(e){
+        e.preventDefault()
+        for(let i of c_right){i.classList.remove('active')}
+        c.classList.add('active')
+        for(let i of cover){i.style.display = 'none'}
+        cover[d].style.display = 'block'
+    })
+})
+// sns
 for(let i of sns_popup){i.style.display = 'none'}
 sns_contents.forEach(function(t,i){
     t.addEventListener('click', function(e){
@@ -74,13 +90,8 @@ sns_popup.forEach(function(a,b){
         for(let j of sns_popup){j.parentElement.style.display = 'none'}
     })
 })
+// bnr
 bnr.forEach(function(t){
-    t.addEventListener('click',function(e){
-        e.preventDefault()
-        t.classList.toggle('show')
-    })
-})
-news_contents.forEach(function(t){
     t.addEventListener('click',function(e){
         e.preventDefault()
         t.classList.toggle('show')

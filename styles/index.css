@@ -389,7 +389,7 @@ main .graphic1 .sns_img .sns_contents {
     background-position: center;
     background-size: cover;
     width: 270px; height: 270px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     border-radius: 10px;
     position: relative;
     cursor: pointer;
@@ -539,6 +539,7 @@ main .graphic2 #bnr_slide .swiper-wrapper .swiper-slide {
     filter: grayscale(100%);
     transition: all 0.3s linear;
 }
+main .graphic2 #bnr_slide .swiper-wrapper > div.show,
 main .graphic2 #bnr_slide .swiper-wrapper .swiper-slide:hover {filter: grayscale(0);}
 main .graphic2 #bnr_slide .swiper-wrapper .slide1 {background-image: url(../images/banner1.jpg);}
 main .graphic2 #bnr_slide .swiper-wrapper .slide2 {background-image: url(../images/banner2.jpg);}
@@ -607,7 +608,7 @@ main .graphic3 .cardnews_wrap .title {
     border-bottom: 2px solid #fff;
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 main .graphic3 .cardnews_wrap .title h2 {
     color: #fff;
@@ -639,103 +640,132 @@ main .graphic3 .cardnews_wrap .title .cardnews_btn .next {
 }
 .trans {transform: translateX(-100%);}
 main .graphic3 .cardnews_wrap .news_contents {
-    width: 1250px;
-    height: 300px;
-    margin: 0 auto;
-    padding: 0 25px;
     display: flex;
-    align-items: center;
+    width: 1200px;
+    height: 570px;
     overflow-x: hidden;
 }
 main .graphic3 .cardnews_wrap .news_contents .contents {
-    width: 1200px;
     display: flex;
-    cursor: pointer;
-    filter: grayscale(100%);
-    transition: all 0.3s linear;
+    transition: all 1s ease;
 }
-main .graphic3 .cardnews_wrap .news_contents .contents > div,
-main .graphic3 .cardnews_wrap .news_contents .contents > p {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 270px; height: 270px;
-    border-radius: 10px;
+main .graphic3 .cardnews_wrap .news_contents .c1 {}
+main .graphic3 .cardnews_wrap .news_contents .contents .c_left {
     position: relative;
-    transition: all 0.3s linear;
-    margin-right: 40px;
+    width: 550px; height: 550px;
+    margin-right: 90px;
 }
-main .graphic3 .cardnews_wrap .news_contents .contents > p:last-child {margin-right: 0;}
-main .graphic3 .cardnews_wrap .news_contents .contents > div::after,
-main .graphic3 .cardnews_wrap .news_contents .contents > p::after {
-    content: '';
-    background-color: rgba(0,0,0,0.5);
-    border-radius: 10px;
-    display: block;
-    position: absolute;
-    left: 0; top: 0;
-    width: 100%; height: 100%; z-index: 100;
-    transition: all 0.3s linear;
-}
-main .graphic3 .cardnews_wrap .news_contents .contents > div:hover,
-main .graphic3 .cardnews_wrap .news_contents .contents > p:hover {
-    transform: scale(1.05);
-    z-index: 300;
-}
-main .graphic3 .cardnews_wrap .news_contents .contents:hover {filter: grayscale(0);}
-/* main .graphic3 .cardnews_wrap .news_contents .contents:hover > div::after {width: 1200px;} */
-main .graphic3 .cardnews_wrap .news_contents .contents:hover > div .txt {
-    width: 1200px;
-    opacity: 1;
-    background-color: rgba(0,0,0,0.8);
-    border-radius: 10px;
-    position: relative;
-    z-index: 999;
-}
-main .graphic3 .cardnews_wrap .news_contents .contents .cover .txt {
-    padding: 30px;
-    width: 100%; height: 100%;
+main .graphic3 .cardnews_wrap .news_contents .contents .c_left .txt {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; height: 100%;
+    padding: 70px 130px;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 10px;
+    transition: all 0.3s linear;
     opacity: 0;
+    cursor: pointer;
+}
+main .graphic3 .cardnews_wrap .news_contents .contents .c_left:hover .txt {opacity: 1;}
+main .graphic3 .cardnews_wrap .news_contents .contents .c_left .txt h3 {
+    font-size: 3rem;
+}
+main .graphic3 .cardnews_wrap .news_contents .contents .c_left .txt .font {}
+main .graphic3 .cardnews_wrap .news_contents .contents .c_left .txt .font span {}
+main .graphic3 .cardnews_wrap .news_contents .contents .c_left .txt .color {}
+main .graphic3 .cardnews_wrap .news_contents .contents .c_left .txt .color span {}
+main .graphic3 .cardnews_wrap .news_contents .contents .c_left .cover {
+    width: 100%; height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-indent: -9999px;
+    border-radius: 10px;
+}
+main .graphic3 .cardnews_wrap .news_contents .contents .c_right {
+    display: flex;
+    flex-flow: row wrap;
+    width: 570px; height: 550px;
+    cursor: pointer;
+}
+main .graphic3 .cardnews_wrap .news_contents .contents .c_right a {
+    display: block;
+    width: 265px; height: 265px;
+    margin: 0 30px 15px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-indent: -9999px;
+    border-radius: 10px;
+    filter: grayscale(100%);
     transition: all 0.3s linear;
 }
-main .graphic3 .cardnews_wrap .news_contents .c1 > .cover {background-image: url(../images/cardnews_first1.jpg);}
-main .graphic3 .cardnews_wrap .news_contents .c1 > p:nth-child(2) {background-image: url(../images/cardnews_first2.jpg);}
-main .graphic3 .cardnews_wrap .news_contents .c1 > p:nth-child(3) {background-image: url(../images/cardnews_first3.jpg);}
-main .graphic3 .cardnews_wrap .news_contents .c1 > p:nth-child(4) {background-image: url(../images/cardnews_first4.jpg);}
-main .graphic3 .cardnews_wrap .news_contents .c2 .cover {background-image: url(../images/cardnews_second1.jpg);}
-main .graphic3 .cardnews_wrap .news_contents .c2 > p:nth-child(2) {background-image: url(../images/cardnews_second2.jpg);}
-main .graphic3 .cardnews_wrap .news_contents .c2 p:nth-child(3) {background-image: url(../images/cardnews_second3.jpg);}
-main .graphic3 .cardnews_wrap .news_contents .c2 p:nth-child(4) {background-image: url(../images/cardnews_second4.jpg);}
-main .graphic3 .cardnews_wrap .news_contents .contents .cover h3 {}
+main .graphic3 .cardnews_wrap .news_contents .contents .c_right a.active,
+main .graphic3 .cardnews_wrap .news_contents .contents .c_right a:hover {
+    filter: grayscale(0);
+    border: 2px solid #FFDB5A;
+}
+main .graphic3 .cardnews_wrap .news_contents .contents .c_right a:nth-last-child(1),
+main .graphic3 .cardnews_wrap .news_contents .contents .c_right a:nth-last-child(2) {margin-bottom: 0;}
+main .graphic3 .cardnews_wrap .news_contents .contents .c_right a:nth-child(2n) {margin-right: 0;}
+main .graphic3 .cardnews_wrap .news_contents .contents .c_left .cover1 {}
+main .graphic3 .cardnews_wrap .news_contents .contents .c_left .cover2 {}
+main .graphic3 .cardnews_wrap .news_contents .contents .c_left .cover3 {}
+main .graphic3 .cardnews_wrap .news_contents .contents .c_left .cover4 {}
+main .graphic3 .cardnews_wrap .news_contents .contents .c_right a:nth-child(1) {}
+main .graphic3 .cardnews_wrap .news_contents .contents .c_right a:nth-child(2) {}
+main .graphic3 .cardnews_wrap .news_contents .contents .c_right a:nth-child(3) {}
+main .graphic3 .cardnews_wrap .news_contents .contents .c_right a:nth-child(4) {}
+/* 카드뉴스 이미지 */
+main .graphic3 .cardnews_wrap .news_contents .c1 .c_left .cover1 {background-image: url(../images/cardnews_first1.jpg);}
+main .graphic3 .cardnews_wrap .news_contents .c1 .c_left .cover2 {background-image: url(../images/cardnews_first2.jpg);}
+main .graphic3 .cardnews_wrap .news_contents .c1 .c_left .cover3 {background-image: url(../images/cardnews_first3.jpg);}
+main .graphic3 .cardnews_wrap .news_contents .c1 .c_left .cover4 {background-image: url(../images/cardnews_first4.jpg);}
+main .graphic3 .cardnews_wrap .news_contents .c2 .c_left .cover1 {background-image: url(../images/cardnews_second1.jpg);}
+main .graphic3 .cardnews_wrap .news_contents .c2 .c_left .cover2 {background-image: url(../images/cardnews_second2.jpg);}
+main .graphic3 .cardnews_wrap .news_contents .c2 .c_left .cover3 {background-image: url(../images/cardnews_second3.jpg);}
+main .graphic3 .cardnews_wrap .news_contents .c2 .c_left .cover4 {background-image: url(../images/cardnews_second4.jpg);}
+main .graphic3 .cardnews_wrap .news_contents .c1 .c_right a:nth-child(1) {background-image: url(../images/cardnews_first1.jpg);}
+main .graphic3 .cardnews_wrap .news_contents .c1 .c_right a:nth-child(2) {background-image: url(../images/cardnews_first2.jpg);}
+main .graphic3 .cardnews_wrap .news_contents .c1 .c_right a:nth-child(3) {background-image: url(../images/cardnews_first3.jpg);}
+main .graphic3 .cardnews_wrap .news_contents .c1 .c_right a:nth-child(4) {background-image: url(../images/cardnews_first4.jpg);}
+main .graphic3 .cardnews_wrap .news_contents .c2 .c_right a:nth-child(1) {background-image: url(../images/cardnews_second1.jpg);}
+main .graphic3 .cardnews_wrap .news_contents .c2 .c_right a:nth-child(2) {background-image: url(../images/cardnews_second2.jpg);}
+main .graphic3 .cardnews_wrap .news_contents .c2 .c_right a:nth-child(3) {background-image: url(../images/cardnews_second3.jpg);}
+main .graphic3 .cardnews_wrap .news_contents .c2 .c_right a:nth-child(4) {background-image: url(../images/cardnews_second4.jpg);}
 /* font 태그모음 */
-main .graphic3 .cardnews_wrap .news_contents .contents .cover .font {}
-main .graphic3 .cardnews_wrap .news_contents .contents .cover .font span {
+main .graphic3 .cardnews_wrap .news_contents .contents .c_left .txt .font {}
+main .graphic3 .cardnews_wrap .news_contents .contents .c_left .txt .font span {
     display: block;
     margin-bottom: 15px;
-    font-size: 1.333rem;
+    font-size: 1.777rem;
 }
-main .graphic3 .cardnews_wrap .news_contents .contents .cover .font span:last-child {margin-bottom: 0;}
-main .graphic3 .cardnews_wrap .news_contents .c1 .cover .font span:first-child {font-family:'tmon';}
-main .graphic3 .cardnews_wrap .news_contents .c1 .cover .font span:last-child {font-family:'나눔스퀘어';}
-main .graphic3 .cardnews_wrap .news_contents .c2 .cover .font span:first-child {font-family:'마포꽃섬';}
-main .graphic3 .cardnews_wrap .news_contents .c2 .cover .font span:last-child {font-family:'나눔스퀘어';}
+main .graphic3 .cardnews_wrap .news_contents .c1 .c_left .txt .font span:first-child {font-family:'마포꽃섬';}
+main .graphic3 .cardnews_wrap .news_contents .c1 .c_left .txt .font span:last-child {font-family:'나눔스퀘어';}
+main .graphic3 .cardnews_wrap .news_contents .c2 .c_left .txt .font span:last-child {margin-bottom: 0;}
+main .graphic3 .cardnews_wrap .news_contents .c2 .c_left .txt .font span:first-child {font-family:'tmon';}
+main .graphic3 .cardnews_wrap .news_contents .c2 .c_left .txt .font span:last-child {font-family:'나눔스퀘어';}
 /* color 태그모음 */
-main .graphic3 .cardnews_wrap .news_contents .contents .cover .color {
+main .graphic3 .cardnews_wrap .news_contents .contents .c_left .txt .color {
+    display: flex;
     flex-flow: row wrap;
 }
-main .graphic3 .cardnews_wrap .news_contents .contents .cover .color p {margin-bottom: 5px;}
-main .graphic3 .cardnews_wrap .news_contents .contents .cover .color p:nth-last-child(1),
-main .graphic3 .cardnews_wrap .news_contents .contents .cover .color p:nth-last-child(2) {margin-bottom: 0;}
-main .graphic3 .cardnews_wrap .news_contents .c1 .cover .color p:first-child span:first-child {background-color: #FFEC88;}
-main .graphic3 .cardnews_wrap .news_contents .c1 .cover .color p:nth-child(2) span:first-child {background-color: #0152A1;}
-main .graphic3 .cardnews_wrap .news_contents .c1 .cover .color p:nth-child(3) span:first-child {background-color: #F38B05;}
-main .graphic3 .cardnews_wrap .news_contents .c1 .cover .color p:nth-child(4) span:first-child {background-color: #CCE2F6;}
-main .graphic3 .cardnews_wrap .news_contents .c1 .cover .color p:nth-child(5) span:first-child {background-color: #EB0000;}
-main .graphic3 .cardnews_wrap .news_contents .c2 .cover .color p:nth-child(1) span:first-child {background-color: #FCEE82;}
-main .graphic3 .cardnews_wrap .news_contents .c2 .cover .color p:nth-child(2) span:first-child {background-color: #FFA9A9;}
+main .graphic3 .cardnews_wrap .news_contents .contents .c_left .txt .color p {margin-bottom: 5px;}
+main .graphic3 .cardnews_wrap .news_contents .contents .c_left .txt .color p span:first-child {width: 45px; height: 45px;}
+main .graphic3 .cardnews_wrap .news_contents .contents .c_left .txt .color p span:last-child {font-size: 1rem;}
+main .graphic3 .cardnews_wrap .news_contents .contents .c_left .txt .color p:nth-last-child(1),
+main .graphic3 .cardnews_wrap .news_contents .contents .c_left .txt .color p:nth-last-child(2) {margin-bottom: 0;}
+main .graphic3 .cardnews_wrap .news_contents .c1 .c_left .txt .color p:nth-child(1) span:first-child {background-color: #FCEE82;}
+main .graphic3 .cardnews_wrap .news_contents .c1 .c_left .txt .color p:nth-child(2) span:first-child {background-color: #FFA9A9;}
+main .graphic3 .cardnews_wrap .news_contents .c2 .c_left .txt .color p:first-child span:first-child {background-color: #FFEC88;}
+main .graphic3 .cardnews_wrap .news_contents .c2 .c_left .txt .color p:nth-child(2) span:first-child {background-color: #0152A1;}
+main .graphic3 .cardnews_wrap .news_contents .c2 .c_left .txt .color p:nth-child(3) span:first-child {background-color: #F38B05;}
+main .graphic3 .cardnews_wrap .news_contents .c2 .c_left .txt .color p:nth-child(4) span:first-child {background-color: #CCE2F6;}
+main .graphic3 .cardnews_wrap .news_contents .c2 .c_left .txt .color p:nth-child(5) span:first-child {background-color: #EB0000;}
 /* 기본태그 */
 main .graphic4 {}
 main .graphic4 .detail_wrap {
@@ -788,13 +818,15 @@ main .graphic4 .detail_wrap .tab_contents > div .c_txt .font span {
     font-size: 1.333rem;
 }
 main .graphic4 .detail_wrap .tab_contents > div .c_txt .font span:last-child {margin-bottom: 0;}
-main .graphic4 .detail_wrap .tab_contents .c1 .c_txt .font span:nth-child(1) {font-family: 'DM Serif Text', serif;}
-main .graphic4 .detail_wrap .tab_contents .c1 .c_txt .font span:nth-child(2) {font-family:'나눔스퀘어';}
-main .graphic4 .detail_wrap .tab_contents .c1 .c_txt .font span:nth-child(3) {font-family:'mapogolden';}
-main .graphic4 .detail_wrap .tab_contents .c1 .c_txt .font span:nth-child(4) {font-family:'mistral';}
-main .graphic4 .detail_wrap .tab_contents .c1 .c_txt .font span:nth-child(5) {font-family:'nanum19';}
-main .graphic4 .detail_wrap .tab_contents .c2 .c_txt .font span:nth-child(1) {font-family: 'Shrikhand', cursive;}
-main .graphic4 .detail_wrap .tab_contents .c2 .c_txt .font span:nth-child(2) {font-family: 'Noto Sans KR', sans-serif;}
+main .graphic4 .detail_wrap .tab_contents .c1 .c_txt .font span:nth-child(1) {font-family: 'Shrikhand', cursive;}
+main .graphic4 .detail_wrap .tab_contents .c1 .c_txt .font span:nth-child(2) {font-family:'여기어때';}
+main .graphic4 .detail_wrap .tab_contents .c2 .c_txt .font span:nth-child(1) {font-family: 'DM Serif Text', serif;}
+main .graphic4 .detail_wrap .tab_contents .c2 .c_txt .font span:nth-child(2) {font-family:'나눔스퀘어';}
+main .graphic4 .detail_wrap .tab_contents .c2 .c_txt .font span:nth-child(3) {font-family:'mapogolden';}
+main .graphic4 .detail_wrap .tab_contents .c2 .c_txt .font span:nth-child(4) {font-family:'mistral';}
+main .graphic4 .detail_wrap .tab_contents .c2 .c_txt .font span:nth-child(5) {font-family:'nanum19';}
+main .graphic4 .detail_wrap .tab_contents .c3 .c_txt .font span:nth-child(1) {font-family: 'Shrikhand', cursive;}
+main .graphic4 .detail_wrap .tab_contents .c3 .c_txt .font span:nth-child(2) {font-family: 'Noto Sans KR', sans-serif;}
 main .graphic4 .detail_wrap .tab_contents .c4 .c_txt .font span:nth-child(1) {font-family:'하나다움';}
 main .graphic4 .detail_wrap .tab_contents .c4 .c_txt .font span:nth-child(2) {font-family: 'Potta One', cursive;}
 main .graphic4 .detail_wrap .tab_contents .c4 .c_txt .font span:nth-child(3) {font-family: 'Noto Sans KR', sans-serif;}
