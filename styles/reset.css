@@ -2,6 +2,7 @@
 /* local or web(@import) 글꼴 작성위치 */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 @font-face {
     font-family:'마포꽃섬'; /* 글꼴명 지정 */
     src:url(../fonts/mapoflower.ttf); /* 글꼴경로 지정 */
@@ -61,6 +62,10 @@
 @font-face {
     font-family:'주아'; /* 글꼴명 지정 */
     src:url(../fonts/jua.ttf); /* 글꼴경로 지정 */
+}
+@font-face {
+    font-family:'Georgia'; /* 글꼴명 지정 */
+    src:url(../fonts/georgia.ttf); /* 글꼴경로 지정 */
 }
 /* reset.css */
 html,body, /*구조태그*/

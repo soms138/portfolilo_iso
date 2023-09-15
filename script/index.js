@@ -23,7 +23,7 @@ const tab_title = document.querySelectorAll('.tab_title a')
 const tab_contents = document.querySelectorAll('.tab_contents > div')
 const tab_detail = document.querySelectorAll('.tab_detail > img')
 const sns_contents = document.querySelectorAll('.sns_contents')
-const sns_popup = document.querySelectorAll('.sns_popup')
+const sns_popup = document.querySelectorAll('.sns_popup > img')
 const bnr = document.querySelectorAll('#bnr_slide .swiper-wrapper .swiper-slide')
 const btn_prev = document.querySelector('.cardnews_btn .prev')
 const btn_next = document.querySelector('.cardnews_btn .next')
@@ -63,13 +63,15 @@ for(let i of sns_popup){i.style.display = 'none'}
 sns_contents.forEach(function(t,i){
     t.addEventListener('click', function(e){
         e.preventDefault()
-        sns_popup.fir[i].style.display = 'block'
+        sns_popup[i].style.display = 'block'
+        for(let j of sns_popup){j.parentElement.style.display = 'block'}
     })
 })
 sns_popup.forEach(function(a,b){
     a.addEventListener('click',function(e){
         e.preventDefault()
         sns_popup[b].style.display = 'none'
+        for(let j of sns_popup){j.parentElement.style.display = 'none'}
     })
 })
 bnr.forEach(function(t){
