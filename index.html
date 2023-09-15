@@ -28,13 +28,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
 </head>
 <body>
+    <p id="mouse"></p>
     <header>
         <p>2023</p>
         <p>PORTFOLIO</p>
         <p>LEESOMIN</p>
     </header>
     <main id="fullpage">
-        <div class="section intro">
+        <div class="section intro" id="section_intro">
             <div class="intro_text">
                 <div class="txt_left">
                     <span>수평선</span>
@@ -54,7 +55,7 @@
                 <span class="cloud2"></span>
             </div>
         </div>
-        <div class="section about">
+        <div class="section about" id="section_about">
             <div class="wrap">
                 <div class="info">
                     <h1>이소민</h1>
@@ -66,11 +67,11 @@
                             </div>
                             <div>
                                 <em>Phone</em>
-                                <span>010-2247-8327</span>
+                                <a href="tel:+82.2247.8327">010-2247-8327</a>
                             </div>
                             <div>
                                 <em>E-mail</em>
-                                <span>thals0313@naver.com</span>
+                                <a href="mailto:thals0313@naver.com">thals0313@naver.com</a>
                             </div>
                             <div>
                                 <em>Adventages</em>
@@ -140,7 +141,7 @@
                 </div>
             </div>
         </div>
-        <div class="section web web1">
+        <div class="section web web1" id="section_web">
             <div class="wrap">
                 <h2>CJ ENM</h2>
                 <div class="project">
@@ -304,7 +305,7 @@
                 </div>
             </div>
         </div>
-        <div class="section graphic graphic1">
+        <div class="section graphic graphic1" id="section_graphic">
             <div class="sns_wrap">
                 <h2>SNS DESIGN</h2>
                 <div class="sns_img">
@@ -808,11 +809,11 @@
                 <div class="contents">
                     <p>
                         <em>Phone</em>
-                        <span>010-2247-8327</span>
+                        <a href="tel:+82.2247.8327">010-2247-8327</a>
                     </p>
                     <p>
                         <em>E-mail</em>
-                        <span>thals0313@naver.com</span>
+                        <a href="mailto:thals0313@naver.com">thals0313@naver.com</a>
                     </p>
                 </div>
             </div>
@@ -837,13 +838,12 @@
             </div>
         </div>
         <div class="fnb_right">
-            <a href="#Intro" class="intro active">INTRO</a>
-            <a href="#Info" class="about">ABOUT</a>
-            <a href="#Web1" class="web">WEB</a>
-            <a href="#SNS" class="graphic">GRAPHIC</a>
+            <a href="#section_intro" class="intro active">INTRO</a>
+            <a href="#section_about" class="about">ABOUT</a>
+            <a href="#section_web" class="web">WEB</a>
+            <a href="#section_graphic" class="graphic">GRAPHIC</a>
         </div>
     </footer>
-    <?php include('./footer.php') ?>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./script/fullPage.js"></script>
     <script src="./script/index.js"></script>

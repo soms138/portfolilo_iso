@@ -1,7 +1,6 @@
 /* bg 태그 모음 */
 main .intro .bg, main .outtro .bg  {width: 100%; height: 100%;}
-main .outro .bg > span,
-main .intro .bg > span {
+main .intro .bg > span , main .outro .bg > span {
     background-repeat: repeat-x;
 }
 .bg .sea {
@@ -51,7 +50,7 @@ main .intro .intro_text {
     justify-content: center;
     position: absolute;
     left: 50%;
-    top: 37.8%;
+    top: 34%;
     transform: translateX(-50%);
     z-index: 300;
     width: 100%;
@@ -104,6 +103,14 @@ main > .about .info .about_contents {
     display: flex;
     justify-content: space-between;
     width: 1200px;
+}
+main > .about .info .about_contents .c_left > div > a {
+    color: #fff;
+    transition: all 0.3s linear;
+}
+main > .about .info .about_contents .c_left > div > a:hover {
+    color: #FFE55B;
+    border-bottom:1px solid #FFE55B;
 }
 /* font 통합태그모음 */
 main > .about .info .about_contents > div > div > em {
@@ -904,16 +911,6 @@ main .graphic4 .detail_wrap .detail_right .detail {
     height: 100vh;
     overflow-y: hidden;
 }
-main .graphic4 .detail_wrap .detail_right .detail .tab_detail:nth-child(1) {transition: all 15s ease;}
-main .graphic4 .detail_wrap .detail_right .detail .tab_detail:nth-child(2) {transition: all 20s ease;}
-main .graphic4 .detail_wrap .detail_right .detail .tab_detail:nth-child(3) {transition: all 15s ease;}
-main .graphic4 .detail_wrap .detail_right .detail .tab_detail:nth-child(4) {transition: all 10s ease;}
-main .graphic4 .detail_wrap .detail_right .detail .tab_detail:nth-child(5) {transition: all 2s ease;}
-main .graphic4 .detail_wrap .detail_right .detail:hover .tab_detail:nth-child(1) {transform: translateY(-70%);}
-main .graphic4 .detail_wrap .detail_right .detail:hover .tab_detail:nth-child(2) {transform: translateY(-80%);}
-main .graphic4 .detail_wrap .detail_right .detail:hover .tab_detail:nth-child(3) {transform: translateY(-75%);}
-main .graphic4 .detail_wrap .detail_right .detail:hover .tab_detail:nth-child(4) {transform: translateY(-55%);}
-main .graphic4 .detail_wrap .detail_right .detail:hover .tab_detail:nth-child(5) {transform: translateY(-5%);}
 main .graphic4 .detail_wrap .detail_right .tab_detail img {width: 100%;}
 /* contact */
 main .contact {
@@ -946,14 +943,19 @@ main .contact .contents p {
     display: flex;
     align-items: center;
 }
-main .contact .contents p:first-child {margin-right: 50px;}
+main .contact .contents p:first-child {margin-right: 70px;}
 main .contact .contents p em {
     font-size: 1.333rem;
     font-weight: 700;
     margin-right: 25px;
     color: #C3E2FF;
 }
-main .contact .contents p span {
+main .contact .contents p a {
     font-weight: 700;
     color: #fff;
+    transition: all 0.3s linear;
+}
+main .contact .contents p a:hover {
+    color:#FFE55B;
+    border-bottom: 2px solid #FFE55B;
 }

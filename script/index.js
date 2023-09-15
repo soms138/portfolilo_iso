@@ -37,7 +37,16 @@ const news_contents = document.querySelectorAll('.news_contents > div')
 const cover = document.querySelectorAll('.c_left > .cover')
 const txt = document.querySelector('.c_left > .txt')
 const c_right = document.querySelectorAll('.c_right > a')
-console.log(tab_contents,tab_title,tab_detail,sns_contents,sns_popup,bnr,btn_prev,btn_next,news_contents,cover,txt,c_right)
+const nav = document.querySelectorAll('.fnb_right > a')
+console.log(tab_contents,tab_title,tab_detail,sns_contents,sns_popup,bnr,btn_prev,btn_next,news_contents,cover,txt,c_right,nav)
+
+nav.forEach(function(t){
+    t.addEventListener('click', function(e){
+        e.preventDefault()
+        for(let i of nav){i.classList.remove('active')}
+        t.classList.add('active')
+    })
+})
 for(let i of tab_contents){i.style.display = 'none'}
 for(let i of tab_detail){i.style.display = 'none'}
 tab_contents[0].style.display = 'flex'
