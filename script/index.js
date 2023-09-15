@@ -41,8 +41,7 @@ const nav = document.querySelectorAll('.fnb_right > a')
 console.log(tab_contents,tab_title,tab_detail,sns_contents,sns_popup,bnr,btn_prev,btn_next,news_contents,cover,txt,c_right,nav)
 
 nav.forEach(function(t){
-    t.addEventListener('click', function(e){
-        e.preventDefault()
+    t.addEventListener('click', function(){
         for(let i of nav){i.classList.remove('active')}
         t.classList.add('active')
     })
