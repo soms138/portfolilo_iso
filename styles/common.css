@@ -110,9 +110,10 @@ header p {
 }
 header p:first-child {width: 81px;}
 footer {
-    position: absolute;
-    bottom: 0;
+    position: fixed;
+    bottom: 0; left: 0;
     padding: 50px 70px;
+    z-index: 999;
 }
 footer .fnb_left {
     display: flex;

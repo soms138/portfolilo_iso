@@ -319,7 +319,7 @@ main .landing .project .project_btn a:last-child:hover {
     color: #EA4C4C;
 }
 /* graphic section 통합태그모음 */
-main .graphic::after {
+main > .graphic::after {
     content: '';
     background-color: rgba(0,0,0,0.5);
     display: block;
@@ -373,6 +373,7 @@ main .graphic h2 {
 main .graphic {
     display: flex;
     flex-flow: column nowrap;
+    position: relative;
 }
 main .graphic1 {position: relative;}
 main .graphic1 h2 {}
@@ -654,6 +655,10 @@ main .graphic3 .cardnews_wrap .news_contents .contents .c_left {
     position: relative;
     width: 550px; height: 550px;
     margin-right: 90px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
 }
 main .graphic3 .cardnews_wrap .news_contents .contents .c_left .txt {
     display: flex;
@@ -721,6 +726,8 @@ main .graphic3 .cardnews_wrap .news_contents .contents .c_right a:nth-child(2) {
 main .graphic3 .cardnews_wrap .news_contents .contents .c_right a:nth-child(3) {}
 main .graphic3 .cardnews_wrap .news_contents .contents .c_right a:nth-child(4) {}
 /* 카드뉴스 이미지 */
+main .graphic3 .cardnews_wrap .news_contents .c1 .c_left {background-image: url(../images/cardnews_first1.jpg);}
+main .graphic3 .cardnews_wrap .news_contents .c2 .c_left {background-image: url(../images/cardnews_second1.jpg);}
 main .graphic3 .cardnews_wrap .news_contents .c1 .c_left .cover1 {background-image: url(../images/cardnews_first1.jpg);}
 main .graphic3 .cardnews_wrap .news_contents .c1 .c_left .cover2 {background-image: url(../images/cardnews_first2.jpg);}
 main .graphic3 .cardnews_wrap .news_contents .c1 .c_left .cover3 {background-image: url(../images/cardnews_first3.jpg);}
