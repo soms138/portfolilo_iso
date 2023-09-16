@@ -144,16 +144,16 @@ main > .about .info .about_contents .c_left > div .tag {}
 main > .about .info .about_contents .c_left > div .tag span {}
 main > .about .info .about_contents .c_left > div .tag span:last-child {}
 main > .about .info .about_contents .c_right {}
-main > .about .info .about_contents .c_right > div:first-child {margin-bottom: 50px;}
+main > .about .info .about_contents .c_right > div:first-child {margin-bottom: 40px;}
 main > .about .info .about_contents .c_right > div {display: flex;}
 main > .about .info .about_contents .c_right > div > em {margin: -3px 25px 0 0;}
 main > .about .info .about_contents .c_right > div .desc {}
-main > .about .info .about_contents .c_right > div .desc p {margin-bottom: 25px;}
+main > .about .info .about_contents .c_right > div .desc p {margin-bottom: 20px;}
 main > .about .info .about_contents .c_right > div .desc p em {font-weight: 700;}
 main > .about .info .about_contents .c_right > div .desc p span {}
 main > .about .skills_wrap {
-    margin-top: 100px;
-    padding: 15px 0;
+    margin-top: 70px;
+    padding: 12px 0;
     position: relative;
     z-index: 200;
     background-color: rgba(255,255,255,0.5);
@@ -168,7 +168,7 @@ main > .about .skills {
     margin: 0 auto;
 }
 main > .about .skills img {
-    width: 60px; height: 60px;
+    width: 50px; height: 50px;
 }
 main .web {
     position: relative;
@@ -198,7 +198,7 @@ main .web h2 {
     position: relative;
     z-index: 200;
     font-family: 'Shrikhand', cursive;
-    font-size: 6.25rem;
+    font-size: 5rem;
     color: #fff;
     margin-bottom: 25px;
     text-align: center;
@@ -207,43 +207,48 @@ main .web h2 {
 main .web .project {
     position: relative;
     z-index: 200;
-    height: 500px;
+    height: 400px;
     width: 100vw;
     background-color: rgba(255,255,255,0.7);
 }
 main .web .project > .container {
     width: 1200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
 }
-main .web .project p {transition: all 0.3s ease;}
+main .web .project p {
+    transition: all 0.3s ease;
+    margin-right: 50px;
+}
 main .web .project p:hover {}
-main .web .project p img {width: 670px; height: 467.07px;}
+main .web .project p img {width: 573.79px; height: 400px;}
 main .web .project .project_contents {
     display: flex;
     flex-flow: column nowrap;
+    width: 470px;
 }
 main .web .project .project_contents > div {
     display: flex;
     margin-bottom: 15px;
 }
+main .web .project .project_contents > div:last-child {margin-bottom: 0;}
 /* font 통합태그모음 */
 main .web .project .project_contents > div:last-child {margin-bottom: 0;}
 main .web .project .project_contents > div > em,
 main .web .project .project_contents > div > p {
-    font-size: 1.333rem;
+    font-size: 1.2rem;
     font-weight: 700;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 main .web .project .project_contents > div > span,
 main .web .project .project_contents > div p,
 main .web .project .project_contents > div .html_title .name em {
-    font-size: 1.333rem;
+    font-size: 1.2rem;
 }
 main .web .project .project_contents > div > em,
 main .web .project .project_contents > div > p {width: 100px;}
@@ -251,10 +256,10 @@ main .web .project .project_contents > div > span,
 main .web .project .project_contents > div > em,
 main .web .project .project_contents > div > p,
 main .web .project .project_contents > div .html_title .name em,
-main .web .project .project_contents > div .html_title .name span {line-height: 26px;}
+main .web .project .project_contents > div .html_title .name span {line-height: 25px;}
 /* 기본 태그 */
 main .web .project .project_contents > div p {}
-main .web .project .project_contents > div .html_title {}
+main .web .project .project_contents > div .html_title {width: 360px;}
 main .web .project .project_contents > div .html_title p {margin-bottom: 10px;}
 main .web .project .project_contents > div .html_title .container {
     display: flex;
@@ -266,7 +271,6 @@ main .web .project .project_contents > div .html_title img {
 main .web .project .project_contents > div .html_title .name {
     display: flex;
     flex-flow: row wrap;
-    width: 370px;
 }
 main .web .project .project_contents > div .html_title .name span {
     font-size: 0.75rem;
@@ -276,10 +280,13 @@ main .web .project .project_contents .process {
     display: flex;
     align-items: center;
 }
-main .web .project .project_contents .process .progress_img {display: flex;}
+main .web .project .project_contents .process .progress_img {
+    display: flex;
+    justify-content: space-between;
+    width: 360px;
+}
 main .web .project .project_contents .process .progress_img img {
     width: 30px; height: 30px;
-    margin-right: 20px;
 }
 main .web .project .project_contents .process .progress_img img:last-child {margin-right: 0;}
 main .web .project .project_btn {
@@ -287,14 +294,14 @@ main .web .project .project_btn {
     align-self: center;
     justify-content: space-between;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 main .web .project .project_btn a {
     display: block;
-    padding: 10px 23px;
+    padding: 7px 23px 10px;
     background-color: rgba(255,255,255,0.25);
     border-radius: 5px;
-    font-size: 1.333rem;
+    font-size: 1.25rem;
     font-weight: 700;
     color: #fff;
     filter: drop-shadow(0 2px 10px rgba(0,0,0,0.25));
@@ -345,7 +352,7 @@ main .graphic h2 {
     padding: 10px;
     border-bottom: 2px solid #fff;
     color: #fff;
-    margin: 0 auto 30px;
+    margin: 0 auto 20px;
     position: relative;
 }
 .graphic h3 {
@@ -397,7 +404,7 @@ main .graphic1 .sns_img .sns_contents {
     background-position: center;
     background-size: cover;
     width: 270px; height: 270px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     border-radius: 10px;
     position: relative;
     cursor: pointer;
@@ -495,7 +502,7 @@ main .graphic2 .banner_wrap .bnr_title {
     border-bottom: 2px solid #fff;
     display: flex;
     align-items: center;
-    margin: 0 auto 30px;
+    margin: 0 auto 20px;
 }
 main .graphic2 .banner_wrap .bnr_title .swiperBtn {
     position: relative;
@@ -527,14 +534,13 @@ main .graphic2 .banner_wrap .bnr_title .swiper-button-next {
 }
 main .graphic2 .swiper-pagination {
     position: absolute;
-    bottom: -5%;
+    bottom: 0;
 }
 .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
     width: 10px; height: 10px;
     background-color: #fff;
 }
 main .graphic2 #bnr_slide {
-    margin-top: 30px;
     width: 1200px; height: 433.33px;
 }
 main .graphic2 #bnr_slide .swiper-wrapper {}
@@ -616,7 +622,7 @@ main .graphic3 .cardnews_wrap .title {
     border-bottom: 2px solid #fff;
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 main .graphic3 .cardnews_wrap .title h2 {
     color: #fff;
@@ -719,7 +725,7 @@ main .graphic3 .cardnews_wrap .news_contents .contents .c_right a {
 main .graphic3 .cardnews_wrap .news_contents .contents .c_right a.active,
 main .graphic3 .cardnews_wrap .news_contents .contents .c_right a:hover {
     filter: grayscale(0);
-    border: 2px solid #FFDB5A;
+    border: 2px solid #FFE55B;
 }
 main .graphic3 .cardnews_wrap .news_contents .contents .c_right a:nth-last-child(1),
 main .graphic3 .cardnews_wrap .news_contents .contents .c_right a:nth-last-child(2) {margin-bottom: 0;}
@@ -794,7 +800,7 @@ main .graphic4 .detail_wrap h2,
 main .graphic4 .detail_wrap .tab_contents {
     width: 650px;
 }
-main .graphic4 .detail_wrap h2 {margin-bottom: 30px;}
+main .graphic4 .detail_wrap h2 {margin-bottom: 20px;}
 main .graphic4 .detail_wrap .tab_contents {}
 main .graphic4 .detail_wrap .tab_contents > div {
     display: flex;
@@ -901,7 +907,7 @@ main .graphic4 .detail_wrap .detail_right .tab_title a:last-child {margin-right:
 main .graphic4 .detail_wrap .detail_right .tab_title a:hover,
 main .graphic4 .detail_wrap .detail_right .tab_title a.active {
     filter: grayscale(0);
-    border: 2px solid #FFDB5A;
+    border: 2px solid #FFE55B;
     border-radius: 10px;
 }
 main .graphic4 .detail_wrap .detail_right .detail {
@@ -909,7 +915,7 @@ main .graphic4 .detail_wrap .detail_right .detail {
     top: 0; left: 0;
     width: 500px;
     height: 100vh;
-    overflow-y: hidden;
+    overflow-y: auto;
 }
 main .graphic4 .detail_wrap .detail_right .tab_detail img {width: 100%;}
 /* contact */

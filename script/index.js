@@ -3,7 +3,7 @@ $('#fullpage').fullpage({
     scrillHorizontally:true,
     navigation: true,
     navigationPosition: 'right',
-    navigationTooltips: ['Intro','Info','Web1','Web2','Landing','SNS','Banner','Cardnews','Detail','Contact'],
+    navigationTooltips: ['Intro','Info','CJ ENM','Cineshop','Landing','SNS','Banner','Cardnews','Detail','Contact'],
 })
 const mouseImg = document.querySelector('#mouse')
 console.log(mouseImg)
