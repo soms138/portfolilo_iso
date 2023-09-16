@@ -38,8 +38,14 @@ const cover = document.querySelectorAll('.c_left > .cover')
 const txt = document.querySelector('.c_left > .txt')
 const c_right = document.querySelectorAll('.c_right > a')
 const nav = document.querySelectorAll('.fnb_right > a')
-console.log(tab_contents,tab_title,tab_detail,sns_contents,sns_popup,bnr,btn_prev,btn_next,news_contents,cover,txt,c_right,nav)
-
+const footer = document.querySelector('footer')
+const section = document.querySelectorAll('.section')
+console.log(tab_contents,tab_title,tab_detail,sns_contents,sns_popup,bnr,btn_prev,btn_next,news_contents,cover,txt,c_right,nav,footer)
+$(".sea").ripples('play')
+$(".sea").ripples({
+    resolution: 500, // 렌더링 값이 클수록 잔물결 효과가 느리게 전파
+    perturbance: 0.02, // 잔물경 굴절 강도. 0은 굴절 없음
+});
 nav.forEach(function(t){
     t.addEventListener('click', function(){
         for(let i of nav){i.classList.remove('active')}

@@ -12,7 +12,6 @@ main .intro .bg > span , main .outro .bg > span {
     width: 100%; height: 50vh;
     bottom: 0;
     z-index: 200;
-    animation: move_bg 300s linear alternate-reverse;
 }
 .bg .cloud1 {
     background-image: url(../images/bg_cloud1.png);
@@ -50,10 +49,11 @@ main .intro .intro_text {
     justify-content: center;
     position: absolute;
     left: 50%;
-    top: 34%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%,-50%);
     z-index: 300;
     width: 100%;
+    padding-bottom: 50px;
 }
 main .intro .intro_text .txt_left, main .intro .intro_text .txt_right {}
 main .intro .intro_text > div > em,
@@ -838,7 +838,7 @@ main .graphic4 .detail_wrap .tab_contents > div .c_txt .font span {
     font-size: 1.333rem;
 }
 main .graphic4 .detail_wrap .tab_contents > div .c_txt .font span:last-child {margin-bottom: 0;}
-main .graphic4 .detail_wrap .tab_contents .c1 .c_txt .font span:nth-child(1) {font-family: 'Shrikhand', cursive;}
+main .graphic4 .detail_wrap .tab_contents .c1 .c_txt .font span:nth-child(1) {font-family: 'DM Serif Text', serif;}
 main .graphic4 .detail_wrap .tab_contents .c1 .c_txt .font span:nth-child(2) {font-family:'여기어때';}
 main .graphic4 .detail_wrap .tab_contents .c2 .c_txt .font span:nth-child(1) {font-family: 'DM Serif Text', serif;}
 main .graphic4 .detail_wrap .tab_contents .c2 .c_txt .font span:nth-child(2) {font-family:'나눔스퀘어';}
@@ -879,25 +879,27 @@ main .graphic4 .detail_wrap .detail_right {
 }
 main .graphic4 .detail_wrap .detail_right .tab_title {
     position: absolute;
-    left: 50%;
-    bottom: 3%;
+    right: 20px;
+    top: 50%;
     z-index: 300;
-    transform: translateX(-50%);
+    transform: translateY(-50%);
     display: flex;
+    flex-flow: column nowrap;
     align-items: center;
 }
 main .graphic4 .detail_wrap .detail_right .tab_title a {
     display: inline-block;
-    width: 70px; height: 70px;
+    width: 60px; height: 60px;
     filter: grayscale(100%);
     transition: all 0.3s linear;
-    margin-right: 10px;
+    margin-bottom: 10px;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
     text-indent: -9999px;
 }
+main .graphic4 .detail_wrap .detail_right .tab_title a:last-child {margin-bottom: 0;}
 main .graphic4 .detail_wrap .detail_right .tab_title a:nth-child(1) {background-image: url(../images/detail1.jpg);}
 main .graphic4 .detail_wrap .detail_right .tab_title a:nth-child(2) {background-image: url(../images/detail2.jpg);}
 main .graphic4 .detail_wrap .detail_right .tab_title a:nth-child(3) {background-image: url(../images/detail3.jpg);}
@@ -943,7 +945,7 @@ main .contact .contents {
     margin-top: 90px;
     position: relative;
     z-index: 500;
-    top: 50px;
+    top: 30px;
 }
 main .contact .contents p {
     display: flex;
