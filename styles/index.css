@@ -282,11 +282,11 @@ main .web .project .project_contents .process {
 }
 main .web .project .project_contents .process .progress_img {
     display: flex;
-    justify-content: space-between;
     width: 360px;
 }
 main .web .project .project_contents .process .progress_img img {
     width: 30px; height: 30px;
+    margin-right: 17px;
 }
 main .web .project .project_contents .process .progress_img img:last-child {margin-right: 0;}
 main .web .project .project_btn {
