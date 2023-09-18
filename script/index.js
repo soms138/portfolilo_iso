@@ -3,7 +3,8 @@ $('#fullpage').fullpage({
     scrillHorizontally:true,
     navigation: true,
     navigationPosition: 'right',
-    navigationTooltips: ['Intro','Info','CJ ENM','Cineshop','Landing','SNS','Banner','Cardnews','Detail','Contact'],
+    navigationTooltips: ['Intro','About','Web','Web2','Landing','SNS','Banner','Cardnews','Detail','Contact'],
+    anchors: ['Intro','About','Web','Web2','Landing','SNS','Banner','Cardnews','Detail','Contact'],
 })
 const mouseImg = document.querySelector('#mouse')
 console.log(mouseImg)
@@ -40,6 +41,7 @@ const c_right = document.querySelectorAll('.c_right > a')
 const nav = document.querySelectorAll('.fnb_right > a')
 const footer = document.querySelector('footer')
 const section = document.querySelectorAll('.section')
+const detail = document.querySelectorAll('.detail > p')
 console.log(tab_contents,tab_title,tab_detail,sns_contents,sns_popup,bnr,btn_prev,btn_next,news_contents,cover,txt,c_right,nav,footer)
 $(".sea").ripples('play')
 $(".sea").ripples({
@@ -98,7 +100,7 @@ sns_contents.forEach(function(t,i){
     t.addEventListener('click', function(e){
         e.preventDefault()
         sns_popup[i].style.display = 'block'
-        for(let j of sns_popup){j.parentElement.style.display = 'block'}
+        for(let i of sns_popup){i.parentElement.style.display = 'block'}
     })
 })
 sns_popup.forEach(function(a,b){
@@ -108,10 +110,12 @@ sns_popup.forEach(function(a,b){
         for(let j of sns_popup){j.parentElement.style.display = 'none'}
     })
 })
-// bnr
-bnr.forEach(function(t){
-    t.addEventListener('click',function(e){
-        e.preventDefault()
-        t.classList.toggle('show')
+// detail
+for(let i of detail){
+    i.addEventListener('mouseover',function(){
+        $.fn.fullpage.setAllowScrolling(false)
     })
-})
+    i.addEventListener('mouseout',function(){
+        $.fn.fullpage.setAllowScrolling(true)
+    })
+}

@@ -55,7 +55,7 @@ main .intro .intro_text {
     width: 100%;
     padding-bottom: 50px;
 }
-main .intro .intro_text .txt_left, main .intro .intro_text .txt_right {}
+main .intro .intro_text .txt_left, main .intro .intro_text .txt_right {margin-top: 15px;}
 main .intro .intro_text > div > em,
 main .intro .intro_text > div > span {
     color: #294F81;
@@ -135,7 +135,7 @@ main > .about .info .about_contents .c_left {margin-right: 100px;}
 main > .about .info .about_contents .c_left > div {
     display: flex;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 main > .about .info .about_contents .c_left > div:last-child {}
 main > .about .info .about_contents .c_left > div > em {}
@@ -144,11 +144,11 @@ main > .about .info .about_contents .c_left > div .tag {}
 main > .about .info .about_contents .c_left > div .tag span {}
 main > .about .info .about_contents .c_left > div .tag span:last-child {}
 main > .about .info .about_contents .c_right {}
-main > .about .info .about_contents .c_right > div:first-child {margin-bottom: 40px;}
+main > .about .info .about_contents .c_right > div:first-child {margin-bottom: 50px;}
 main > .about .info .about_contents .c_right > div {display: flex;}
 main > .about .info .about_contents .c_right > div > em {margin: -3px 25px 0 0;}
 main > .about .info .about_contents .c_right > div .desc {}
-main > .about .info .about_contents .c_right > div .desc p {margin-bottom: 20px;}
+main > .about .info .about_contents .c_right > div .desc p {margin-bottom: 30px;}
 main > .about .info .about_contents .c_right > div .desc p em {font-weight: 700;}
 main > .about .info .about_contents .c_right > div .desc p span {}
 main > .about .skills_wrap {
@@ -207,7 +207,7 @@ main .web h2 {
 main .web .project {
     position: relative;
     z-index: 200;
-    height: 400px;
+    height: 500px;
     width: 100vw;
     background-color: rgba(255,255,255,0.7);
 }
@@ -223,18 +223,18 @@ main .web .project > .container {
 }
 main .web .project p {
     transition: all 0.3s ease;
-    margin-right: 50px;
+    margin-right: 70px;
 }
 main .web .project p:hover {}
-main .web .project p img {width: 573.79px; height: 400px;}
+main .web .project p img {width: 645.52px; height: 450px;}
 main .web .project .project_contents {
     display: flex;
     flex-flow: column nowrap;
-    width: 470px;
+    width: 500px;
 }
 main .web .project .project_contents > div {
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 main .web .project .project_contents > div:last-child {margin-bottom: 0;}
 /* font 통합태그모음 */
@@ -550,11 +550,8 @@ main .graphic2 #bnr_slide .swiper-wrapper .swiper-slide {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
-    filter: grayscale(100%);
     transition: all 0.3s linear;
 }
-main .graphic2 #bnr_slide .swiper-wrapper > div.show,
-main .graphic2 #bnr_slide .swiper-wrapper .swiper-slide:hover {filter: grayscale(0);}
 main .graphic2 #bnr_slide .swiper-wrapper .slide1 {background-image: url(../images/banner1.jpg);}
 main .graphic2 #bnr_slide .swiper-wrapper .slide2 {background-image: url(../images/banner2.jpg);}
 main .graphic2 #bnr_slide .swiper-wrapper .slide3 {background-image: url(../images/banner3.jpg);}
@@ -573,7 +570,7 @@ main .graphic2 #bnr_slide .swiper-wrapper .swiper-slide > div {
     opacity: 0;
     transition: all 0.3s linear;
 }
-main .graphic2 #bnr_slide .swiper-wrapper > div.show > div {opacity: 1;}
+main .graphic2 #bnr_slide .swiper-wrapper .swiper-slide > div:hover {opacity: 1;}
 main .graphic2 #bnr_slide .swiper-wrapper .swiper-slide > div h3 {font-size: 3.75rem;}
 
 /* font 태그 */
@@ -800,15 +797,49 @@ main .graphic4 .detail_wrap h2,
 main .graphic4 .detail_wrap .tab_contents {
     width: 650px;
 }
-main .graphic4 .detail_wrap h2 {margin-bottom: 20px;}
+main .graphic4 .detail_wrap h2 {margin: 0 0 20px;}
+main .graphic4 .detail_wrap .detail_left .detail_container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+}
+main .graphic4 .detail_wrap .detail_left .tab_title {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-right: 10px;
+}
+main .graphic4 .detail_wrap .detail_left .tab_title a {
+    display: block;
+    width: 60px; height: 60px;
+    filter: grayscale(100%);
+    transition: all 0.3s linear;
+    margin-bottom: 10px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    text-indent: -9999px;
+}
+main .graphic4 .detail_wrap .detail_left .tab_title a:last-child {margin-bottom: 0;}
+main .graphic4 .detail_wrap .detail_left .tab_title a:nth-child(1) {background-image: url(../images/detail1.jpg);}
+main .graphic4 .detail_wrap .detail_left .tab_title a:nth-child(2) {background-image: url(../images/detail2.jpg);}
+main .graphic4 .detail_wrap .detail_left .tab_title a:nth-child(3) {background-image: url(../images/detail3.jpg);}
+main .graphic4 .detail_wrap .detail_left .tab_title a:nth-child(4) {background-image: url(../images/detail4.jpg);}
+main .graphic4 .detail_wrap .detail_left .tab_title a:nth-child(5) {background-image: url(../images/detail5.jpg);}
+main .graphic4 .detail_wrap .detail_left .tab_title a:last-child {margin-right: 0;}
+main .graphic4 .detail_wrap .detail_left .tab_title a:hover,
+main .graphic4 .detail_wrap .detail_left .tab_title a.active {
+    filter: grayscale(0);
+    border: 2px solid #FFE55B;
+    border-radius: 10px;
+}
 main .graphic4 .detail_wrap .tab_contents {}
 main .graphic4 .detail_wrap .tab_contents > div {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 main .graphic4 .detail_wrap .tab_contents > div .tab_cover {
-    width: 350px; height: 550px;
+    width: 300px; height: 500px;
     border-radius: 10px;
     background-position: top;
     background-repeat: no-repeat;
@@ -821,7 +852,7 @@ main .graphic4 .detail_wrap .tab_contents .c3 .tab_cover {background-image: url(
 main .graphic4 .detail_wrap .tab_contents .c4 .tab_cover {background-image: url(../images/detail4.jpg);}
 main .graphic4 .detail_wrap .tab_contents .c5 .tab_cover {background-image: url(../images/detail5.jpg);}
 main .graphic4 .detail_wrap .tab_contents > div .c_txt {
-    width: 250px;
+    width: 300px;
     display: flex;
     flex-flow: column nowrap;
 }
@@ -876,41 +907,6 @@ main .graphic4 .detail_wrap .tab_contents .c5 .c_txt .color p:nth-child(3) span:
 main .graphic4 .detail_wrap .detail_right {
     position: relative;
     height: 100%;
-}
-main .graphic4 .detail_wrap .detail_right .tab_title {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    z-index: 300;
-    transform: translateY(-50%);
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-}
-main .graphic4 .detail_wrap .detail_right .tab_title a {
-    display: inline-block;
-    width: 60px; height: 60px;
-    filter: grayscale(100%);
-    transition: all 0.3s linear;
-    margin-bottom: 10px;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-    text-indent: -9999px;
-}
-main .graphic4 .detail_wrap .detail_right .tab_title a:last-child {margin-bottom: 0;}
-main .graphic4 .detail_wrap .detail_right .tab_title a:nth-child(1) {background-image: url(../images/detail1.jpg);}
-main .graphic4 .detail_wrap .detail_right .tab_title a:nth-child(2) {background-image: url(../images/detail2.jpg);}
-main .graphic4 .detail_wrap .detail_right .tab_title a:nth-child(3) {background-image: url(../images/detail3.jpg);}
-main .graphic4 .detail_wrap .detail_right .tab_title a:nth-child(4) {background-image: url(../images/detail4.jpg);}
-main .graphic4 .detail_wrap .detail_right .tab_title a:nth-child(5) {background-image: url(../images/detail5.jpg);}
-main .graphic4 .detail_wrap .detail_right .tab_title a:last-child {margin-right: 0;}
-main .graphic4 .detail_wrap .detail_right .tab_title a:hover,
-main .graphic4 .detail_wrap .detail_right .tab_title a.active {
-    filter: grayscale(0);
-    border: 2px solid #FFE55B;
-    border-radius: 10px;
 }
 main .graphic4 .detail_wrap .detail_right .detail {
     position: relative;
