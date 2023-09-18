@@ -98,7 +98,7 @@ c_right.forEach(function(c,d){
 for(let i of sns_popup){i.style.display = 'none'}
 sns_contents.forEach(function(t,i){
     t.addEventListener('click', function(e){
-        e.preventDefault()
+        e.preventDefault();
         sns_popup[i].style.display = 'block'
         for(let i of sns_popup){i.parentElement.style.display = 'block'}
     })

@@ -123,7 +123,7 @@ header .nav > li {
     flex-flow: column nowrap;
     align-items: center;
 }
-header .nav > li > a.open {
+header .nav > li:hover > a {
     color: #FFE55B;
 }
 header .nav > li > a {
@@ -133,7 +133,7 @@ header .nav > li > a {
     z-index: 999;
     transition: transform 1s linear;
 }
-header .nav > li > a.open ~ .nav_open {
+header .nav > li:hover > a ~ .nav_open {
     display: block;
 }
 header .nav > li > .nav_open {
@@ -147,6 +147,7 @@ header .nav > li > .nav_open {
     display: none;
     transition: all 0.5s ease;
 }
+header .nav > li:hover .nav_open {display: block;}
 header .nav > li > .nav_open > li {
     margin-bottom: 20px;
 }
