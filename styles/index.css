@@ -391,12 +391,31 @@ main .graphic {
 }
 main .graphic1 {position: relative;}
 main .graphic1 h2 {}
+main .graphic1 .sns_wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+main .graphic1 .sns_wrap > p {
+    position: absolute;
+    z-index: 500;
+    top: 0; left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    cursor: pointer;
+}
 main .graphic1 .sns_img {
     width: 1200px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     margin: 0 auto;
+    position: relative;
+    z-index: 400;
 }
 main .graphic1 .sns_img:nth-child(4n) {margin-right: 0;}
 main .graphic1 .sns_img .sns_contents {
@@ -441,7 +460,6 @@ main .graphic1 .sns_popup {
 main .graphic1 .sns_popup img {
     width: 100%;
     border-radius: 10px;
-    cursor: pointer;
 }
 main .graphic1 .sns_img .sns h3 {}
 /* font */

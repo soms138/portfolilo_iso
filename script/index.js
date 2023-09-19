@@ -26,11 +26,19 @@ const bnr_slide = new Swiper('#bnr_slide',{
         nextEl: '.bnr_title .swiperBtn .swiper-button-next'
     },
 })
+$('.nav_open').hide()
+$('nav').on('mouseover',function(){
+    $('.nav_open').stop().slideDown();
+})
+$('nav').on('mouseout',function(){
+    $('.nav_open').stop().slideUp();
+})
 const tab_title = document.querySelectorAll('.tab_title a')
 const tab_contents = document.querySelectorAll('.tab_contents > div')
 const tab_detail = document.querySelectorAll('.tab_detail > img')
 const sns_contents = document.querySelectorAll('.sns_contents')
 const sns_popup = document.querySelectorAll('.sns_popup > img')
+const sns_bg =document.querySelector('.sns_wrap > p')
 const bnr = document.querySelectorAll('#bnr_slide .swiper-wrapper .swiper-slide')
 const btn_prev = document.querySelector('.cardnews_btn .prev')
 const btn_next = document.querySelector('.cardnews_btn .next')
@@ -96,19 +104,20 @@ c_right.forEach(function(c,d){
 })
 // sns
 for(let i of sns_popup){i.style.display = 'none'}
+sns_bg.style.display = 'none'
 sns_contents.forEach(function(t,i){
     t.addEventListener('click', function(e){
         e.preventDefault();
         sns_popup[i].style.display = 'block'
         for(let i of sns_popup){i.parentElement.style.display = 'block'}
+        sns_bg.style.display = 'block'
     })
 })
-sns_popup.forEach(function(a,b){
-    a.addEventListener('click',function(e){
-        e.preventDefault()
-        sns_popup[b].style.display = 'none'
-        for(let j of sns_popup){j.parentElement.style.display = 'none'}
-    })
+sns_bg.addEventListener('click',function(e){
+    e.preventDefault()
+    for(let i of sns_popup){i.style.display = 'none'}
+    for(let i of sns_popup){i.parentElement.style.display = 'none'}
+    this.style.display = 'none'
 })
 // detail
 for(let i of detail){
