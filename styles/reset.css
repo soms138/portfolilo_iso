@@ -67,6 +67,14 @@
     font-family:'Georgia'; /* 글꼴명 지정 */
     src:url(../fonts/georgia.ttf); /* 글꼴경로 지정 */
 }
+@font-face {
+    font-family:'가나'; /* 글꼴명 지정 */
+    src:url(../fonts/ghana.ttf); /* 글꼴경로 지정 */
+}
+@font-face {
+    font-family:'지마켓'; /* 글꼴명 지정 */
+    src:url(../fonts/gmarket.ttf); /* 글꼴경로 지정 */
+}
 /* reset.css */
 html,body, /*구조태그*/
 h1,h2,h3,h4,h5,h6,p,blockquote,address, /*block*/

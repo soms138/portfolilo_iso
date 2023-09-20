@@ -487,8 +487,10 @@ main .graphic1 .sns_img .c3 .font span:nth-child(2) {font-family:'rage';}
 main .graphic1 .sns_img .c4 .font span:nth-child(1) {font-family: 'Racing Sans One', cursive;}
 main .graphic1 .sns_img .c5 .font span:nth-child(1) {font-family: 'DM Serif Text', serif;}
 main .graphic1 .sns_img .c5 .font span:nth-child(2) {font-family:'나눔스퀘어';}
-main .graphic1 .sns_img .c6 .font span:nth-child(1) {font-family: 'DM Serif Text', serif;}
-main .graphic1 .sns_img .c6 .font span:nth-child(2) {font-family: 'Nanum Gothic', sans-serif;}
+main .graphic1 .sns_img .c6 .font span:nth-child(1) {font-family: '가나';}
+main .graphic1 .sns_img .c6 .font span:nth-child(2) {font-family: '지마켓';}
+main .graphic1 .sns_img .c7 .font span:nth-child(1) {font-family: '가나';}
+main .graphic1 .sns_img .c7 .font span:nth-child(2) {font-family: '지마켓';}
 /* color */
 main .graphic1 .sns_img .sns .color {}
 main .graphic1 .sns_img .sns .color span {}
@@ -502,8 +504,10 @@ main .graphic1 .sns_img .sns .color span:first-child {border: 1px solid rgba(255
 .graphic .c4 .color p span:first-child {background-color: #222222;}
 .graphic .c5 .color p:first-child span:first-child {background-color: #000;}
 .graphic .c5 .color p:last-child span:first-child {background-color: #fff;}
-.graphic .c6 .color p:first-child span:first-child {background-color: #000;}
+.graphic .c6 .color p:first-child span:first-child {background-color: #BA1600;}
 .graphic .c6 .color p:last-child span:first-child {background-color: #fff;}
+.graphic .c7 .color p:first-child span:first-child {background-color: #FFBB38;}
+.graphic .c7 .color p:last-child span:first-child {background-color: #333333;}
 /* background img */
 main .graphic1 .sns_img .c1 {background-image: url(../images/sns1.jpg);}
 main .graphic1 .sns_img .c2 {background-image: url(../images/sns2.jpg);}
@@ -511,6 +515,7 @@ main .graphic1 .sns_img .c3 {background-image: url(../images/sns3.jpg);}
 main .graphic1 .sns_img .c4 {background-image: url(../images/sns4.jpg);}
 main .graphic1 .sns_img .c5 {background-image: url(../images/sns5.jpg);}
 main .graphic1 .sns_img .c6 {background-image: url(../images/sns6.jpg);}
+main .graphic1 .sns_img .c7 {background-image: url(../images/sns7.jpg);}
 main .graphic2 .banner_wrap {
     position: relative;
 }
