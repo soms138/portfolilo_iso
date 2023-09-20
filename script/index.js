@@ -3,8 +3,8 @@ $('#fullpage').fullpage({
     scrillHorizontally:true,
     navigation: true,
     navigationPosition: 'right',
-    navigationTooltips: ['Intro','About','Web','Web2','Landing','SNS','Banner','Cardnews','Detail','Contact'],
-    anchors: ['Intro','About','Web','Web2','Landing','SNS','Banner','Cardnews','Detail','Contact'],
+    navigationTooltips: ['Intro','About','Web','Web','Landing','SNS','Banner','Cardnews','Detail','Contact'],
+    anchors: ['Intro','About','Web','Web','Landing','SNS','Banner','Cardnews','Detail','Contact'],
 })
 const mouseImg = document.querySelector('#mouse')
 console.log(mouseImg)
