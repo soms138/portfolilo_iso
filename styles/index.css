@@ -580,6 +580,7 @@ main .graphic2 #bnr_slide .swiper-wrapper .slide2 {background-image: url(../imag
 main .graphic2 #bnr_slide .swiper-wrapper .slide3 {background-image: url(../images/banner3.jpg);}
 main .graphic2 #bnr_slide .swiper-wrapper .slide4 {background-image: url(../images/banner4.jpg);}
 main .graphic2 #bnr_slide .swiper-wrapper .slide5 {background-image: url(../images/banner5.jpg);}
+main .graphic2 #bnr_slide .swiper-wrapper .slide6 {background-image: url(../images/banner6.jpg);}
 main .graphic2 #bnr_slide .swiper-wrapper .swiper-slide > div {
     display: flex;
     flex-flow: column nowrap;
@@ -610,6 +611,7 @@ main .graphic2 #bnr_slide .swiper-wrapper .slide3 > div .font span:last-child {f
 main .graphic2 #bnr_slide .swiper-wrapper .slide5 > div .font span:first-child {font-family:'땅스부대찌개';}
 main .graphic2 #bnr_slide .swiper-wrapper .slide5 > div .font span:nth-child(2) {font-family:'nanum19';}
 main .graphic2 #bnr_slide .swiper-wrapper .slide5 > div .font span:last-child {font-family:'주아';}
+main .graphic2 #bnr_slide .swiper-wrapper .slide6 > div .font span:first-child {font-family:'나눔스퀘어';}
 /* color 태그 */
 main .graphic2 #bnr_slide .swiper-wrapper .swiper-slide > div .color {}
 main .graphic2 #bnr_slide .swiper-wrapper .swiper-slide > div .color p span:first-child {border: 1px solid rgba(255,255,255,0.5);}
@@ -628,6 +630,8 @@ main .graphic2 #bnr_slide .swiper-wrapper .slide5 > div .color p:nth-child(1) sp
 main .graphic2 #bnr_slide .swiper-wrapper .slide5 > div .color p:nth-child(2) span:first-child {background-color: #CEEAEE;}
 main .graphic2 #bnr_slide .swiper-wrapper .slide5 > div .color p:nth-child(3) span:first-child {background-color: #009DBB;}
 main .graphic2 #bnr_slide .swiper-wrapper .slide5 > div .color p:nth-child(4) span:first-child {background-color: #F3960A;}
+main .graphic2 #bnr_slide .swiper-wrapper .slide6 > div .color p:nth-child(1) span:first-child {background-color: #2926B7;}
+main .graphic2 #bnr_slide .swiper-wrapper .slide6 > div .color p:nth-child(2) span:first-child {background-color: #EDEEF0;}
 main .graphic2 #bnr_slide .swiper-wrapper .swiper-slide > div .color p span:last-child {}
 /* news */
 main .graphic3 .cardnews_wrap {
