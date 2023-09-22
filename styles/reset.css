@@ -87,6 +87,7 @@ form,fieldset,legend,input,select,option,button,label,textarea {
     font-size:16px; font-style:normal; font-weight:normal;
     text-decoration:none;
     letter-spacing: -0.02rem;
+    cursor: none;
 }
 th {text-align:left;}
 table,tr,th,td {border-collase:collase;}
@@ -101,7 +102,7 @@ css 디자인 결과에서 숨겨지는 대상태그에
 적용하는 공통 클래스 skip */
 .skip {display:none;}
 /* swiper-slide 라이브러리에서 기본제공하는 이전, 다음 숨기기 */
-.bnr_title .swiperBtn .swiper-button-prev::after,
-.bnr_title .swiperBtn .swiper-button-next::after {
+#bnr_slide .swiper-button-prev::after,
+#bnr_slide .swiper-button-next::after {
     display: none;
 }

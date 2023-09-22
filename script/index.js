@@ -12,20 +12,6 @@ window.addEventListener('mousemove',function(e){
         mouseImg.style.left = `${e.clientX}px` // X축
         mouseImg.style.top = `${e.clientY}px` // Y축
 })
-const bnr_slide = new Swiper('#bnr_slide',{
-    direction: 'horizontal',
-    autoplay:{delay:3000},
-    speed:1000,
-    loop:true,
-    pagination: {
-        el: ".swiper-pagination",
-        dynamicBullets: true,
-    },
-    navigation: {
-        prevEl: '.bnr_title .swiperBtn .swiper-button-prev',
-        nextEl: '.bnr_title .swiperBtn .swiper-button-next'
-    },
-})
 $('.nav_open').hide()
 $('nav').on('mouseover',function(){
     $('.nav_open').stop().slideDown();
@@ -39,7 +25,9 @@ const tab_detail = document.querySelectorAll('.tab_detail > img')
 const sns_contents = document.querySelectorAll('.sns_contents')
 const sns_popup = document.querySelectorAll('.sns_popup > img')
 const sns_bg =document.querySelector('.sns_wrap > p')
-const bnr = document.querySelectorAll('#bnr_slide .swiper-wrapper .swiper-slide')
+const bnr_tab = document.querySelectorAll('#bnr_slide .swiper-slide')
+const bnr_popup = document.querySelectorAll('.bnr_popup > p')
+const bnr_bg = document.querySelector('.bnr_bg')
 const btn_prev = document.querySelector('.cardnews_btn .prev')
 const btn_next = document.querySelector('.cardnews_btn .next')
 const news_contents = document.querySelectorAll('.news_contents > div')
@@ -50,7 +38,7 @@ const nav = document.querySelectorAll('.fnb_right > a')
 const footer = document.querySelector('footer')
 const section = document.querySelectorAll('.section')
 const detail = document.querySelectorAll('.detail > p')
-console.log(tab_contents,tab_title,tab_detail,sns_contents,sns_popup,bnr,btn_prev,btn_next,news_contents,cover,txt,c_right,nav,footer)
+console.log(tab_contents,tab_title,tab_detail,sns_contents,sns_popup,bnr_tab,bnr_popup,bnr_bg,btn_prev,btn_next,news_contents,cover,txt,c_right,nav,footer)
 $(".sea").ripples('play')
 $(".sea").ripples({
     resolution: 500, // 렌더링 값이 클수록 잔물결 효과가 느리게 전파
@@ -118,6 +106,31 @@ sns_bg.addEventListener('click',function(e){
     for(let i of sns_popup){i.style.display = 'none'}
     for(let i of sns_popup){i.parentElement.style.display = 'none'}
     this.style.display = 'none'
+})
+// bnr
+for(let i of bnr_popup){i.style.display = 'none'}
+bnr_bg.style.display = 'none'
+bnr_tab.forEach(function(t,i){
+    t.addEventListener('click', function(e){
+        e.preventDefault();
+        bnr_popup[i].style.display = 'block'
+        bnr_bg.style.display = 'block'
+    })
+})
+bnr_bg.addEventListener('click',function(e){
+    e.preventDefault()
+    for(let i of bnr_popup){i.style.display = 'none'}
+    this.style.display = 'none'
+})
+const bnr_slide = new Swiper('#bnr_slide',{
+    slidesPerView: 1.5,
+    centeredSlides:true,
+    direction: 'horizontal',
+    autoplay:{delay:3000},
+    speed:800,
+    spaceBetween: 30,
+    loop:true,
+    scrollbar:{el:'#bnr_slide .swiper-scrollbar'},
 })
 // detail
 for(let i of detail){
