@@ -630,10 +630,7 @@ main .graphic2 .bnr_contents #bnr_slide .bnr1 .container .font span:first-child 
 main .graphic2 .bnr_contents #bnr_slide .bnr1 .container .font span:nth-child(2) {font-family:'cooper';}
 main .graphic2 .bnr_contents #bnr_slide .bnr3 .container .font span:first-child {font-family: 'Galada', cursive;}
 main .graphic2 .bnr_contents #bnr_slide .bnr3 .container .font span:last-child {font-family: 'Noto Sans KR', sans-serif;}
-main .graphic2 .bnr_contents #bnr_slide .bnr5 .container .font span:first-child {font-family:'땅스부대찌개';}
-main .graphic2 .bnr_contents #bnr_slide .bnr5 .container .font span:nth-child(2) {font-family:'nanum19';}
-main .graphic2 .bnr_contents #bnr_slide .bnr5 .container .font span:last-child {font-family:'주아';}
-main .graphic2 .bnr_contents #bnr_slide .bnr6 .container .font span:first-child {font-family:'나눔스퀘어';}
+main .graphic2 .bnr_contents #bnr_slide .bnr5 .container .font span:first-child {font-family:'나눔스퀘어';}
 /* color 태그 */
 main .graphic2 .bnr_contents #bnr_slide .swiper-slide .container .color {}
 main .graphic2 .bnr_contents #bnr_slide .swiper-slide .container .color p span:first-child {border: 1px solid rgba(255,255,255,0.5);}
