@@ -552,7 +552,7 @@ main .graphic2 .bnr_contents .bnr_popup .bnr {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1100px; height: 366.67px;
+    width: 1200px; height: 400px;
     border-radius: 10px;
 }
 main .graphic2 .bnr_contents .bnr_popup .bnr1 {background-image: url(../images/banner1.jpg);}
@@ -576,7 +576,6 @@ main .graphic2 .bnr_contents #bnr_slide {
     position: relative;
 }
 main .graphic2 .bnr_contents #bnr_slide .swiper-scrollbar {
-    /* background: rgba(255,255,255,0.9); */
     width: 30%;
     left: 50%;
     transform: translateX(-50%);
