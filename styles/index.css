@@ -587,7 +587,7 @@ main .product_wrap {
     margin: 70px 0 100px;
 }
 main .graphic2 .bnr_contents #bnr_slide .swiper-slide {
-    width: 900px !important; height: 300px;
+    width: 900px; height: 300px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -871,6 +871,7 @@ main .graphic4 .detail_wrap .detail_left .tab_title a:nth-child(2) {background-i
 main .graphic4 .detail_wrap .detail_left .tab_title a:nth-child(3) {background-image: url(../images/detail3.jpg);}
 main .graphic4 .detail_wrap .detail_left .tab_title a:nth-child(4) {background-image: url(../images/detail4.jpg);}
 main .graphic4 .detail_wrap .detail_left .tab_title a:nth-child(5) {background-image: url(../images/detail5.jpg);}
+main .graphic4 .detail_wrap .detail_left .tab_title a:nth-child(6) {background-image: url(../images/detail6.jpg);}
 main .graphic4 .detail_wrap .detail_left .tab_title a:last-child {margin-right: 0;}
 main .graphic4 .detail_wrap .detail_left .tab_title a:hover,
 main .graphic4 .detail_wrap .detail_left .tab_title a.active {
@@ -896,6 +897,7 @@ main .graphic4 .detail_wrap .tab_contents .c2 .tab_cover {background-image: url(
 main .graphic4 .detail_wrap .tab_contents .c3 .tab_cover {background-image: url(../images/detail3.jpg);}
 main .graphic4 .detail_wrap .tab_contents .c4 .tab_cover {background-image: url(../images/detail4.jpg);}
 main .graphic4 .detail_wrap .tab_contents .c5 .tab_cover {background-image: url(../images/detail5.jpg);}
+main .graphic4 .detail_wrap .tab_contents .c6 .tab_cover {background-image: url(../images/detail6.jpg);}
 main .graphic4 .detail_wrap .tab_contents > div .c_txt {
     width: 300px;
     display: flex;
@@ -916,18 +918,23 @@ main .graphic4 .detail_wrap .tab_contents > div .c_txt .font span {
 main .graphic4 .detail_wrap .tab_contents > div .c_txt .font span:last-child {margin-bottom: 0;}
 main .graphic4 .detail_wrap .tab_contents .c1 .c_txt .font span:nth-child(1) {font-family: 'DM Serif Text', serif;}
 main .graphic4 .detail_wrap .tab_contents .c1 .c_txt .font span:nth-child(2) {font-family:'나눔스퀘어';}
-main .graphic4 .detail_wrap .tab_contents .c1 .c_txt .font span:nth-child(3) {font-family:'mapogolden';}
-main .graphic4 .detail_wrap .tab_contents .c1 .c_txt .font span:nth-child(4) {font-family:'mistral';}
-main .graphic4 .detail_wrap .tab_contents .c1 .c_txt .font span:nth-child(5) {font-family:'nanum19';}
+main .graphic4 .detail_wrap .tab_contents .c1 .c_txt .font span:nth-child(3) {font-family:'지마켓';}
+main .graphic4 .detail_wrap .tab_contents .c1 .c_txt .font span:nth-child(4) {font-family:'blacksword';}
+main .graphic4 .detail_wrap .tab_contents .c1 .c_txt .font span:nth-child(5) {font-family:'kopub 바탕체';}
 main .graphic4 .detail_wrap .tab_contents .c2 .c_txt .font span:nth-child(1) {font-family: 'DM Serif Text', serif;}
-main .graphic4 .detail_wrap .tab_contents .c2 .c_txt .font span:nth-child(2) {font-family:'여기어때';}
-main .graphic4 .detail_wrap .tab_contents .c3 .c_txt .font span:nth-child(1) {font-family: 'Shrikhand', cursive;}
-main .graphic4 .detail_wrap .tab_contents .c3 .c_txt .font span:nth-child(2) {font-family: 'Noto Sans KR', sans-serif;}
-main .graphic4 .detail_wrap .tab_contents .c4 .c_txt .font span:nth-child(1) {font-family:'하나다움';}
-main .graphic4 .detail_wrap .tab_contents .c4 .c_txt .font span:nth-child(2) {font-family: 'Potta One', cursive;}
-main .graphic4 .detail_wrap .tab_contents .c4 .c_txt .font span:nth-child(3) {font-family: 'Noto Sans KR', sans-serif;}
-main .graphic4 .detail_wrap .tab_contents .c5 .c_txt .font span:nth-child(1) {font-family: 'Noto Sans KR', sans-serif;}
-main .graphic4 .detail_wrap .tab_contents .c5 .c_txt .font span:nth-child(2) {font-family:'주아';}
+main .graphic4 .detail_wrap .tab_contents .c2 .c_txt .font span:nth-child(2) {font-family:'나눔스퀘어';}
+main .graphic4 .detail_wrap .tab_contents .c2 .c_txt .font span:nth-child(3) {font-family:'mapogolden';}
+main .graphic4 .detail_wrap .tab_contents .c2 .c_txt .font span:nth-child(4) {font-family:'mistral';}
+main .graphic4 .detail_wrap .tab_contents .c2 .c_txt .font span:nth-child(5) {font-family:'nanum19';}
+main .graphic4 .detail_wrap .tab_contents .c3 .c_txt .font span:nth-child(1) {font-family: 'DM Serif Text', serif;}
+main .graphic4 .detail_wrap .tab_contents .c3 .c_txt .font span:nth-child(2) {font-family:'여기어때';}
+main .graphic4 .detail_wrap .tab_contents .c4 .c_txt .font span:nth-child(1) {font-family: 'Shrikhand', cursive;}
+main .graphic4 .detail_wrap .tab_contents .c4 .c_txt .font span:nth-child(2) {font-family: 'Noto Sans KR', sans-serif;}
+main .graphic4 .detail_wrap .tab_contents .c5 .c_txt .font span:nth-child(1) {font-family:'하나다움';}
+main .graphic4 .detail_wrap .tab_contents .c5 .c_txt .font span:nth-child(2) {font-family: 'Potta One', cursive;}
+main .graphic4 .detail_wrap .tab_contents .c5 .c_txt .font span:nth-child(3) {font-family: 'Noto Sans KR', sans-serif;}
+main .graphic4 .detail_wrap .tab_contents .c6 .c_txt .font span:nth-child(1) {font-family: 'Noto Sans KR', sans-serif;}
+main .graphic4 .detail_wrap .tab_contents .c6 .c_txt .font span:nth-child(2) {font-family:'주아';}
 /* color 태그모음 */
 main .graphic4 .detail_wrap .tab_contents > div .c_txt .color {}
 main .graphic4 .detail_wrap .tab_contents > div .c_txt .color p span:first-child {
@@ -935,19 +942,22 @@ main .graphic4 .detail_wrap .tab_contents > div .c_txt .color p span:first-child
     border: 1px solid rgba(255,255,255,0.5);
 }
 main .graphic4 .detail_wrap .tab_contents > div .c_txt .color p span:last-child {font-size: 1rem;}
-main .graphic4 .detail_wrap .tab_contents .c1 .c_txt .color p:nth-child(1) span:first-child {background: #C9E0F3;}
-main .graphic4 .detail_wrap .tab_contents .c1 .c_txt .color p:nth-child(2) span:first-child {background: #2079B0;}
-main .graphic4 .detail_wrap .tab_contents .c2 .c_txt .color p:nth-child(1) span:first-child {background: #F16687;}
-main .graphic4 .detail_wrap .tab_contents .c2 .c_txt .color p:nth-child(2) span:first-child {background: #3A6EE3;}
-main .graphic4 .detail_wrap .tab_contents .c3 .c_txt .color p:nth-child(1) span:first-child {background: #FF9C91;}
-main .graphic4 .detail_wrap .tab_contents .c3 .c_txt .color p:nth-child(2) span:first-child {background: #9A6A6A;}
-main .graphic4 .detail_wrap .tab_contents .c3 .c_txt .color p:nth-child(3) span:first-child {background: #FAD000;}
-main .graphic4 .detail_wrap .tab_contents .c4 .c_txt .color p:nth-child(1) span:first-child {background: #8F0010;}
-main .graphic4 .detail_wrap .tab_contents .c4 .c_txt .color p:nth-child(2) span:first-child {background: #F2C141;}
-main .graphic4 .detail_wrap .tab_contents .c4 .c_txt .color p:nth-child(3) span:first-child {background: #FFD698;}
-main .graphic4 .detail_wrap .tab_contents .c5 .c_txt .color p:nth-child(1) span:first-child {background: #C2172D;}
-main .graphic4 .detail_wrap .tab_contents .c5 .c_txt .color p:nth-child(2) span:first-child {background: #364C20;}
-main .graphic4 .detail_wrap .tab_contents .c5 .c_txt .color p:nth-child(3) span:first-child {background: #FAF28B;}
+main .graphic4 .detail_wrap .tab_contents .c1 .c_txt .color p:nth-child(1) span:first-child {background: #7192B4;}
+main .graphic4 .detail_wrap .tab_contents .c1 .c_txt .color p:nth-child(2) span:first-child {background: #C13F3E;}
+main .graphic4 .detail_wrap .tab_contents .c1 .c_txt .color p:nth-child(3) span:first-child {background: #F9F484;}
+main .graphic4 .detail_wrap .tab_contents .c2 .c_txt .color p:nth-child(1) span:first-child {background: #C9E0F3;}
+main .graphic4 .detail_wrap .tab_contents .c2 .c_txt .color p:nth-child(2) span:first-child {background: #2079B0;}
+main .graphic4 .detail_wrap .tab_contents .c3 .c_txt .color p:nth-child(1) span:first-child {background: #F16687;}
+main .graphic4 .detail_wrap .tab_contents .c3 .c_txt .color p:nth-child(2) span:first-child {background: #3A6EE3;}
+main .graphic4 .detail_wrap .tab_contents .c4 .c_txt .color p:nth-child(1) span:first-child {background: #FF9C91;}
+main .graphic4 .detail_wrap .tab_contents .c4 .c_txt .color p:nth-child(2) span:first-child {background: #9A6A6A;}
+main .graphic4 .detail_wrap .tab_contents .c4 .c_txt .color p:nth-child(3) span:first-child {background: #FAD000;}
+main .graphic4 .detail_wrap .tab_contents .c5 .c_txt .color p:nth-child(1) span:first-child {background: #8F0010;}
+main .graphic4 .detail_wrap .tab_contents .c5 .c_txt .color p:nth-child(2) span:first-child {background: #F2C141;}
+main .graphic4 .detail_wrap .tab_contents .c5 .c_txt .color p:nth-child(3) span:first-child {background: #FFD698;}
+main .graphic4 .detail_wrap .tab_contents .c6 .c_txt .color p:nth-child(1) span:first-child {background: #C2172D;}
+main .graphic4 .detail_wrap .tab_contents .c6 .c_txt .color p:nth-child(2) span:first-child {background: #364C20;}
+main .graphic4 .detail_wrap .tab_contents .c6 .c_txt .color p:nth-child(3) span:first-child {background: #FAF28B;}
 /* 기본 태그 */
 main .graphic4 .detail_wrap .detail_right {
     position: relative;
